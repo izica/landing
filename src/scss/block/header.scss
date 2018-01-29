@@ -1,0 +1,51 @@
+.header {
+    position: relative;
+    width: 100%;
+    background: #083862;
+
+    &__wrap {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    &__logo {
+        width: 149px;
+        height: 38px;
+    }
+
+    &-menu {
+        &__item {
+            font-size: 14px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+
+        a {
+            display: flex;
+            width: 13px;
+            height: 13px;
+            margin-left: 15px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 13px;
+                max-height: 13px;
+            }
+        }
+    }
+}

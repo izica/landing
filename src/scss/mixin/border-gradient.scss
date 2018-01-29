@@ -1,0 +1,27 @@
+@mixin borderGradient($borderColor1: #000, $borderColor2: #fff, $colorPercent: 30%, $bgColor1: #000, $bgColor2: #fff, $borderWidth: 1px, $borderRadius: 5px) {
+    &::before {
+        border-radius: $borderRadius;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        @include gradient($borderColor1, $borderColor2, $colorPercent);
+    }
+
+    &::after {
+        border-radius: $borderRadius;
+        position: absolute;
+        content: '';
+        z-index: 2;
+        top: $borderWidth;
+        left: $borderWidth;
+        bottom: $borderWidth;
+        right: $borderWidth;
+
+        @include gradient($bgColor1, $bgColor2, 0%);
+    }
+}

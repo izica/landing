@@ -1,0 +1,9 @@
+@mixin gradient($color1: #000, $color2: #fff, $colorPercent: 0%) {
+    background: #{$color1};
+    background: -moz-linear-gradient(top, #{$color1} 0%, #{$color1} #{$colorPercent}, #{$color2} 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #{$color1}), color-stop(#{$colorPercent}, #{$color1}), color-stop(100%, #{$color2}));
+    background: -webkit-linear-gradient(top, #{$color1} 0%, #{$color1} #{$colorPercent}, #{$color2} 100%);
+    background: -o-linear-gradient(top, #{$color1} 0%, #{$color1} #{$colorPercent}, #{$color2} 100%);
+    background: -ms-linear-gradient(top, #{$color1} 0%, #{$color1} #{$colorPercent}, #{$color2} 100%);
+    background: linear-gradient(to bottom, #{$color1} 0%, #{$color1} #{$colorPercent}, #{$color2} 100%);
+}
