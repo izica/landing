@@ -1,0 +1,94 @@
+.roadmap {
+    width: 1085px;
+    margin: 0 auto;
+
+    h2 {
+        font-family: 'Montserrat';
+        font-size: 36px;
+        font-weight: 300;
+        margin: 0 0 60px;
+        text-align: center;
+        color: #fff;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &-timeline {
+        font-family: 'Exo 2';
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 55px;
+            left: 0;
+            height: 0;
+            content: '';
+            border-top: 2px solid #c4c4c4;
+        }
+
+        &__item {
+            position: relative;
+            width: 109px;
+            margin-top: -10px;
+            padding-top: 44px;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+                content: '';
+                border: 2px solid #c4c4c4;
+                border-radius: 50%;
+                background: #0e2a42;
+            }
+
+            h3 {
+                font-family: 'Roboto';
+                margin: 0 0 10px;
+                color: #40acff;
+            }
+
+            span {
+                font-size: 11px;
+                color: #f2f2f2;
+            }
+
+            &--blue {
+                &::before {
+                    border: 2px solid #40acff;
+                }
+            }
+
+            &--active {
+                &::before {
+                    top: -5px;
+                    left: -5px;
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid #40acff;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    content: '';
+                    border: 2px solid #40acff;
+                    border-radius: 50%;
+                    background: #40acff;
+                }
+            }
+        }
+    }
+}
