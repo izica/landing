@@ -1,0 +1,103 @@
+.new-era {
+    padding-top: 50px;
+    color: #fff;
+
+    h1 {
+        font-family: 'Montserrat';
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+
+        span {
+            color: #40acf4;
+        }
+    }
+
+    h2 {
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &-play {
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 40px auto;
+        cursor: pointer;
+    }
+
+    &-counter {
+        position: relative;
+        width: 570px;
+        margin: 0 auto 35px;
+        padding: 20px 0;
+        background: rgba(64,172,255,1);
+        background: -webkit-linear-gradient(left, rgba(64,172,255,1) 0%, rgba(46,150,224,1) 51%, rgba(27,128,191,1) 100%);
+        background: -o-linear-gradient(left, rgba(64,172,255,1) 0%, rgba(46,150,224,1) 51%, rgba(27,128,191,1) 100%);
+        background: linear-gradient(to right, rgba(64,172,255,1) 0%, rgba(46,150,224,1) 51%, rgba(27,128,191,1) 100%);
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            content: '';
+            background-image: url('/assets/i/new-era-polygon.png');
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 24px;
+            position: relative;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        &__items {
+            display: flex;
+        }
+
+        &__item {
+            font-family: 'Exo 2';
+            position: relative;
+            width: 25%;
+
+            &::after {
+                position: absolute;
+                top: 15px;
+                right: 0;
+                display: block;
+                width: 0;
+                height: 60px;
+                content: '';
+                border-right: 1px solid rgba(#fff, .2);
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+
+            h3 {
+                font-size: 42px;
+                font-weight: 400;
+                line-height: 42px;
+                display: block;
+                margin: 0 0 25px;
+                text-align: center;
+            }
+
+            span {
+                font-size: 14px;
+                display: block;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+}

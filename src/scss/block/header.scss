@@ -1,16 +1,16 @@
 .header {
+    font-family: 'Exo 2';
     position: relative;
     width: 100%;
     background: #083862;
-    font-family: 'Exo 2';
 
     &__wrap {
         display: flex;
         width: 1200px;
+        height: 60px;
         margin: 0 auto;
         align-items: center;
         justify-content: space-between;
-        height: 60px;
     }
 
     &__logo {
