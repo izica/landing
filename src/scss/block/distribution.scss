@@ -1,0 +1,121 @@
+.distribution {
+    color: #fff;
+    width: 885px;
+    margin: 0 auto;
+
+    h2 {
+        font-weight: 300;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 150px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-item {
+        position: relative;
+        width: 330px;
+        height: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__info {
+            position: absolute;
+
+            h4 {
+                font-size: 24px;
+                color: #2D9CDB;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+
+            span {
+                font-weight: 300;
+                font-size: 14px;
+                white-space: nowrap;
+            }
+
+            &--bounty {
+                top: -75px;
+                left: 149px;
+                text-align: left;
+            }
+
+            &--consult {
+                top: -55px;
+                left: 5px;
+                text-align: right;
+            }
+
+            &--fund {
+                left: -148px;
+                top: 61px;
+                text-align: right;
+            }
+
+            &--command {
+                left: -158px;
+                top: 203px;
+                text-align: right;
+            }
+
+            &--selling {
+                top: 258px;
+                left: 334px;
+                text-align: left;
+            }
+
+            &--legal {
+                top: -75px;
+left: -46px;
+                text-align: right;
+            }
+
+            &--develop {
+                left: -108px;
+top: 127px;
+                text-align: right;
+            }
+
+            &--admin {
+                top: 352px;
+            left: -112px;
+                text-align: right;
+            }
+
+            &--pr {
+                top: 352px;
+left: 222px;
+                text-align: left;
+            }
+
+            &--marketing {
+                top: 216px;
+    left: 360px;
+                text-align: left;
+            }
+        }
+    }
+}
