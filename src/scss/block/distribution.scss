@@ -1,13 +1,13 @@
 .distribution {
-    color: #fff;
     width: 885px;
     margin: 0 auto;
+    color: #fff;
 
     h2 {
-        font-weight: 300;
-        text-align: center;
         font-size: 36px;
+        font-weight: 300;
         margin-bottom: 150px;
+        text-align: center;
 
         span {
             font-weight: 700;
@@ -21,15 +21,15 @@
 
     &-item {
         position: relative;
+        display: flex;
         width: 330px;
         height: 330px;
-        display: flex;
         align-items: center;
         justify-content: center;
 
         h3 {
-            text-align: center;
             font-size: 24px;
+            text-align: center;
         }
 
         img {
@@ -45,15 +45,15 @@
 
             h4 {
                 font-size: 24px;
-                color: #2D9CDB;
                 font-weight: 400;
                 margin-top: 0;
                 margin-bottom: 5px;
+                color: #2d9cdb;
             }
 
             span {
-                font-weight: 300;
                 font-size: 14px;
+                font-weight: 300;
                 white-space: nowrap;
             }
 
@@ -70,14 +70,14 @@
             }
 
             &--fund {
-                left: -148px;
                 top: 61px;
+                left: -148px;
                 text-align: right;
             }
 
             &--command {
-                left: -158px;
                 top: 203px;
+                left: -158px;
                 text-align: right;
             }
 
@@ -89,31 +89,31 @@
 
             &--legal {
                 top: -75px;
-left: -46px;
+                left: -46px;
                 text-align: right;
             }
 
             &--develop {
+                top: 127px;
                 left: -108px;
-top: 127px;
                 text-align: right;
             }
 
             &--admin {
                 top: 352px;
-            left: -112px;
+                left: -112px;
                 text-align: right;
             }
 
             &--pr {
                 top: 352px;
-left: 222px;
+                left: 222px;
                 text-align: left;
             }
 
             &--marketing {
                 top: 216px;
-    left: 360px;
+                left: 360px;
                 text-align: left;
             }
         }
