@@ -1,3 +1,57 @@
 .today{
-    display: flex
+    display: flex;
+    width: 1200px;
+    color: #fff;
+    margin: 0 auto 150px;
+    font-size: 14px;
+    h2{
+        font-size: 36px;
+        margin: 0 0 20px;
+    }
+    &-block{
+        width: 50%;
+    }
+    &-item{
+        margin-bottom: 60px;
+    }
+    &-icons{
+        display: flex;
+        &__item{
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            height: 23px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            &--money{
+                padding-left: 48px;
+                background-image: url('/assets/i/today-money.png');
+            }
+            &--gamepad{
+                padding-left: 45px;
+
+                background-image: url('/assets/i/today-gamepad.png');
+            }
+            &--chart{
+                padding-left: 47px;
+
+                background-image: url('/assets/i/today-chart.png');
+            }
+        }
+    }
+    p{
+        margin: 0;
+    }
+    ul{
+        padding: 20px 15px;
+        margin: 0;
+        list-style: none;
+    }
+    li{
+        margin: 0;
+        padding: 0;
+        i{
+            margin-right: 15px;
+        }
+    }
 }
