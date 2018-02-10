@@ -1,0 +1,97 @@
+.ecosystem{
+    display: flex;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    align-items: flex-start;
+
+    h2{
+        font-size: 36px;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        position: relative;
+        span{
+            font-weight: 700;
+        }
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 35px;
+            bottom: 0;
+            height: 0;
+            border-top: 2px solid #fff;
+        }
+    }
+    h3{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Exo 2';
+    }
+    &-block{
+        &--left{
+            width: 70%;
+        }
+        &--right{
+            width: 30%;
+        }
+    }
+    &-items{
+
+    }
+
+    &-scheme{
+        background-image: url('/assets/i/ecosystem-scheme.png');
+    }
+
+    &-item{
+        padding-left: 200px;
+        font-family: 'Exo 2';
+        font-size: 14px;
+        min-height: 170px;
+        &--clickcoin{
+            background-image: url('/assets/i/ecosystem-clickcoin.png');
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+        &--token{
+            background-image: url('/assets/i/ecosystem-token.png');
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+        &__title{
+            font-size: 36px;
+            font-weight: 700;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            position: relative;
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 35px;
+                bottom: 0;
+                height: 0;
+                border-top: 2px solid #fff;
+            }
+
+        }
+        p{
+            margin: 0;
+        }
+        ul{
+            padding: 20px 10px;
+            margin: 0;
+        }
+        li{
+            margin: 0;
+            padding: 0;
+            i{
+                margin-right: 20px;
+            }
+        }
+    }
+}
