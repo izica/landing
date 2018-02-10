@@ -2,11 +2,11 @@
     display: flex;
     width: 1200px;
     color: #fff;
-    margin: 0 auto 150px;
+    margin: 0 auto 120px;
     font-size: 14px;
     h2{
         font-size: 36px;
-        margin: 0 0 20px;
+        margin: 0 0 25px;
     }
     &-block{
         width: 50%;
@@ -16,6 +16,7 @@
     }
     &-icons{
         display: flex;
+        margin-bottom: 20px;
         &__item{
             margin-right: 30px;
             display: flex;
@@ -29,27 +30,27 @@
             }
             &--gamepad{
                 padding-left: 45px;
-
                 background-image: url('/assets/i/today-gamepad.png');
             }
             &--chart{
                 padding-left: 47px;
-
                 background-image: url('/assets/i/today-chart.png');
             }
         }
     }
     p{
         margin: 0;
+        line-height: 18px;
     }
     ul{
-        padding: 20px 15px;
+        padding: 0px 15px 20px;
         margin: 0;
         list-style: none;
     }
     li{
-        margin: 0;
+        margin: 0 0 20px;
         padding: 0;
+        line-height: 18px;
         i{
             margin-right: 15px;
         }
