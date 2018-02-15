@@ -8,6 +8,7 @@
     &-wrap {
         width: 908px;
         margin: 0 auto;
+        padding-bottom: 100px;
     }
 
     h2 {
@@ -39,7 +40,10 @@
         color: #fff;
         border-radius: 3px;
         background: #0a1e2e;
-        background: #40acff;
+
+        &:hover{
+            background: #40acff;
+        }
 
         &::before {
             position: absolute;
