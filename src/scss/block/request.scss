@@ -1,4 +1,5 @@
 .request {
+    z-index: 2;
     position: relative;
     background: rgba(#0f263a, 1);
     background: -webkit-linear-gradient(top, rgba(#0e2841, 1) 0%, rgba(#0f263a, 1) 100%);
@@ -8,7 +9,7 @@
     font-family: 'Montserrat';
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 40px;
 
 
     &::before {
@@ -16,7 +17,7 @@
         display: block;
         position: absolute;
         top: 0px;
-        bottom: 0;
+        bottom: -130px;
         left: 0;
         right: 0;
         background-image: url('/assets/i/request-bg.png');
