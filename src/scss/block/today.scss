@@ -1,15 +1,94 @@
 .today{
-    display: flex;
-    width: 1200px;
-    color: #fff;
-    margin: 0 auto 120px;
-    font-size: 14px;
+    background: rgba(14, 44, 73, 1);
+    background: -webkit-linear-gradient(top, rgba(14, 44, 73, 1) 0%, rgba(#112337, 1) 40%, rgba(#112337, 1) 100%);
+    background: -o-linear-gradient(top, rgba(14, 44, 73, 1) 0%, rgba(#112337, 1) 40%, rgba(#112337, 1) 100%);
+    background: linear-gradient(to bottom, rgba(14, 44, 73, 1) 0%, rgba(#112337, 1) 40%, rgba(#112337, 1) 100%);
+
+    &-wrap{
+        display: flex;
+        width: 1200px;
+        color: #fff;
+        margin: 0 auto 120px;
+        font-size: 14px;
+    }
     h2{
         font-size: 36px;
         margin: 0 0 25px;
     }
+
+    &-parallax{
+        position: absolute;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--1{
+            top: -80px;
+            left: -5px;
+            width: 246px;
+            height: 319px;
+            background-image: url('/assets/i/today-block-1.png');
+        }
+        &--2{
+            top: 28px;
+            left: 157px;
+            width: 191px;
+            height: 230px;
+            background-image: url('/assets/i/today-block-2.png');
+        }
+        &--3{
+            top: 153px;
+            left: 20px;
+            width: 212px;
+            height: 264px;
+            background-image: url('/assets/i/today-block-3.png');
+        }
+        &--4{
+            top: -53px;
+            left: 313px;
+            width: 215px;
+            height: 268px;
+            background-image: url('/assets/i/today-block-4.png');
+        }
+        &--5{
+            top: 163px;
+            left: 245px;
+            width: 245px;
+            height: 317px;
+            background-image: url('/assets/i/today-block-5.png');
+        }
+        &--6{
+            left: 411px;
+            top: 135px;
+            width: 188px;
+            height: 225px;
+            background-image: url('/assets/i/today-block-6.png');
+        }
+    }
+
     &-block{
         width: 50%;
+        position: relative;
+        &--left{
+            width: calc(100% - 570px);
+
+            &::before{
+                content: '';
+                display: block;
+                width: 658px;
+                height: 300px;
+                position: absolute;
+                top: 65px;
+                left: -86px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url('/assets/i/today-blocks.png');
+            }
+        }
+        &--right{
+            width: 570px;
+        }
     }
     &-item{
         margin-bottom: 60px;
