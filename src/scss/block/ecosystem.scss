@@ -1,96 +1,143 @@
-.ecosystem{
-    display: flex;
-    color: #fff;
+.ecosystem {
     position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    align-items: flex-start;
+    background: rgba(#161c27, 1);
+    background: -webkit-linear-gradient(top, rgba(#161c27, 1) 0%, rgba(#152333, 1) 100%);
+    background: -o-linear-gradient(top, rgba(#161c27, 1) 0%, rgba(#152333, 1) 100%);
+    background: linear-gradient(to bottom, rgba(#161c27, 1) 0%, rgba(#152333, 1) 100%);
 
-    h2{
-        font-size: 36px;
-        font-family: 'Montserrat';
-        font-weight: 300;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
+    &::before {
+        position: absolute;
+        top: 125px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: '';
+        background-image: url('/assets/i/ecosystem-bg.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 225%;
+    }
+
+    &-wrap {
         position: relative;
-        span{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 150px;
+        color: #fff;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-family: 'Montserrat';
+        font-size: 36px;
+        font-weight: 300;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+
+        span {
             font-weight: 700;
         }
-        &::after{
-            content: '';
-            display: block;
+
+        &::after {
             position: absolute;
-            width: 35px;
             bottom: 0;
+            display: block;
+            width: 35px;
             height: 0;
+            content: '';
             border-top: 2px solid #fff;
         }
     }
-    h3{
+
+    h3 {
+        font-family: 'Exo 2';
         font-size: 14px;
         font-weight: 400;
-        font-family: 'Exo 2';
-    }
-    &-block{
-        &--left{
-            width: 70%;
-        }
-        &--right{
-            width: 30%;
-        }
-    }
-    &-items{
-
+        line-height: 19px;
     }
 
-    &-scheme{
+    &-block {
+        &--left {
+            width: 60%;
+        }
+
+        &--right {
+            display: flex;
+            width: 40%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-items {
+        padding-top: 60px;
+    }
+
+    &-scheme {
+        width: 255px;
+        height: 687px;
         background-image: url('/assets/i/ecosystem-scheme.png');
     }
 
-    &-item{
-        padding-left: 200px;
+    &-item {
         font-family: 'Exo 2';
         font-size: 14px;
         min-height: 170px;
-        &--clickcoin{
+        margin-bottom: 50px;
+        padding-left: 200px;
+
+        &--clickcoin {
             background-image: url('/assets/i/ecosystem-clickcoin.png');
-            background-position: left top;
             background-repeat: no-repeat;
+            background-position: left top;
         }
-        &--token{
+
+        &--token {
             background-image: url('/assets/i/ecosystem-token.png');
-            background-position: left top;
             background-repeat: no-repeat;
+            background-position: left top;
         }
-        &__title{
+
+        &__title {
             font-size: 36px;
             font-weight: 700;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
             position: relative;
-            &::after{
-                content: '';
-                display: block;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+
+            &::after {
                 position: absolute;
-                width: 35px;
                 bottom: 0;
+                display: block;
+                width: 35px;
                 height: 0;
+                content: '';
                 border-top: 2px solid #fff;
             }
+        }
 
-        }
-        p{
+        p {
+            line-height: 19px;
             margin: 0;
         }
-        ul{
+
+        ul {
+            margin: 0;
             padding: 20px 15px;
-            margin: 0;
             list-style: none;
         }
-        li{
+
+        li {
+            line-height: 19px;
             margin: 0;
             padding: 0;
-            i{
+
+            i {
                 margin-right: 15px;
             }
         }
