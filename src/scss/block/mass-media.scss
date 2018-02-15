@@ -1,6 +1,27 @@
 .mass-media{
-    width: 1200px;
-    margin: 0 auto;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -250px;
+        left: 0;
+        right: 0;
+        bottom: -285px;
+        background-image: url('/assets/i/mass-media-bg.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 100%;
+        z-index: 2;
+    }
+
+    &-wrap{
+        z-index: 3;
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
 
     h2 {
         font-family: 'Montserrat';

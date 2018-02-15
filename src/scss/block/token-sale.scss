@@ -8,7 +8,7 @@
     &-wrap{
         width: 1200px;
         margin: 0 auto;
-        padding-bottom: 100px;
+        padding-bottom: 60px;
     }
 
     h2 {
@@ -70,6 +70,7 @@
     }
 
     &-info {
+        z-index: 2;
         position: relative;
         width: 733px;
         margin: 0 auto 100px;

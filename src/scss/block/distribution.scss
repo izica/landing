@@ -1,13 +1,38 @@
 .distribution {
-    width: 885px;
-    margin: 0 auto;
-    color: #fff;
+    position: relative;
+    background: rgba(#14202e, 1);
+    background: -webkit-linear-gradient(top, rgba(#14202e, 1) 0%, rgba(#161e2a, 1) 50%);
+    background: -o-linear-gradient(top, rgba(#14202e, 1) 0%, rgba(#161e2a, 1) 50%);
+    background: linear-gradient(to bottom, rgba(#14202e, 1) 0%, rgba(#161e2a, 1) 50%);
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -334px;
+        height: 1300px;
+        left: 0;
+        right: 0;
+        background-image: url('/assets/i/distribution-bg.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 150%;
+    }
+
+    &-wrap{
+        position: relative;
+        width: 885px;
+        margin: 0 auto;
+        color: #fff;
+        padding-bottom: 300px;
+    }
 
     h2 {
         font-size: 36px;
         font-weight: 300;
         margin-bottom: 150px;
         text-align: center;
+        margin-top: 0;
 
         span {
             font-weight: 700;
