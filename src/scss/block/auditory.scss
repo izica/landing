@@ -1,10 +1,34 @@
 .auditory {
-    font-family: 'Montserrat';
-    width: 1180px;
-    margin: 0 auto;
-    color: #fff;
+    position: relative;
+    background: rgba(#0e283e, 1);
+    background: -webkit-linear-gradient(top, rgba(#10263a, 1) 0%, rgba(#0e283e, 1) 100%);
+    background: -o-linear-gradient(top, rgba(#10263a, 1) 0%, rgba(#0e283e, 1) 100%);
+    background: linear-gradient(to bottom, rgba(#10263a, 1) 0%, rgba(#0e283e, 1) 100%);
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url('/assets/i/auditory-bg.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 100%;
+    }
+
+    &-wrap{
+        font-family: 'Montserrat';
+        width: 1180px;
+        margin: 0 auto;
+        color: #fff;
+        position: relative;
+    }
 
     h2 {
+        margin-top: 0;
         font-size: 42px;
         font-weight: 300;
         margin-bottom: 80px;
