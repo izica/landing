@@ -8,12 +8,14 @@
         "build": "gulp build",
         "images": "gulp images",
         "css": "gulp css",
-        "js": "gulp js"
+        "js": "gulp js",
+        "v": "gulp -v"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "gulp": "latest",
+        "gulp": "^3.9.0",
+        "gulp-autopolyfiller": "^1.2.1",
         "gulp-autoprefixer": "latest",
         "gulp-concat": "latest",
         "gulp-connect": "latest",
@@ -23,5 +25,8 @@
         "gulp-tinypng-nokey": "latest",
         "gulp-uglify": "latest",
         "gulp-watch": "latest"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.26.0"
     }
 }

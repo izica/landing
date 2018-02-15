@@ -16,18 +16,18 @@ var path = {
         images: './assets/i/',
     },
     src: {
-    	images: './src/i/**/*',
+        images: './src/i/**/*',
         css:    './src/scss/global.scss',
         js: [
-        	'./src/js/libs/*.js',
-        	'./src/js/module/*.js',
-        	'./src/js/page/*.js',
-        	'./src/js/*.js'
+            './src/js/libs/*.js',
+            './src/js/module/*.js',
+            './src/js/page/*.js',
+            './src/js/*.js'
         ],
     },
     watch: {
         css: './src/scss/**/*.scss',
-        js:  './src/js/*.js',
+        js:  './src/js/**/*.js',
     }
 };
 
