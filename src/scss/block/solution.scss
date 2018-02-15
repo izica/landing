@@ -1,49 +1,81 @@
-.solution{
+.solution {
     position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    h2{
+    background: rgba(#112337, 1);
+    background: -webkit-linear-gradient(top, rgba(#112337, 1) 0%, rgba(#161c27, 1) 100%);
+    background: -o-linear-gradient(top, rgba(#112337, 1) 0%, rgba(#161c27, 1) 100%);
+    background: linear-gradient(to bottom, rgba(#112337, 1) 0%, rgba(#161c27, 1) 100%);
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -150px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url('/assets/i/solution-bg.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 100%;
+    }
+
+    &-wrap {
+        position: relative;
+        margin: 0 auto;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 200px;
+    }
+
+    h2 {
         font-size: 36px;
         color: #fff;
         font-weight: 700;
         position: relative;
         margin-bottom: 20px;
         padding-bottom: 20px;
-        &::after{
+
+        &::after {
             content: '';
             display: block;
             position: absolute;
-            bottom: 0px;
+            bottom: 0;
             left: 0;
             width: 35px;
             height: 0;
             border-bottom: 2px solid #ccc;
         }
     }
-    p{
+
+    p {
         font-size: 14px;
         font-family: 'Exo 2';
         color: #fff;
         display: block;
         width: 625px;
+        line-height: 20px;
     }
-    ul{
+
+    ul {
         list-style: none;
         margin: 25px 15px;
         padding: 0;
     }
-    li{
+
+    li {
         font-size: 14px;
+        line-height: 22px;
         color: #fff;
         font-family: 'Exo 2';
-        i{
+
+        i {
             margin-right: 15px;
         }
     }
-    img{
+
+    img {
         transform: translate(42px, -89px);
     }
 }
