@@ -1,8 +1,15 @@
 .blog {
+    position: relative;
+    padding-bottom: 160px;
+    background: rgba(#151f2b, 1);
+    background: -webkit-linear-gradient(top, rgba(#122334, 1) 0%, rgba(#151f2b, 1) 100%);
+    background: -o-linear-gradient(top, rgba(#122334, 1) 0%, rgba(#151f2b, 1) 100%);
+    background: linear-gradient(to bottom, rgba(#122334, 1) 0%, rgba(#151f2b, 1) 100%);
+    
     h2 {
         font-size: 36px;
         color: #fff;
-        margin-bottom: 90px;
+        margin-bottom: 60px;
         margin-top: 0;
         font-family: 'Montserrat';
         text-align: center;
