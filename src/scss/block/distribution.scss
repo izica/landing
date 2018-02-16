@@ -17,6 +17,9 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% 150%;
+        @include media(0px, 1200px){
+            height: 1800px;
+        }
     }
 
     &-wrap{
@@ -25,6 +28,13 @@
         margin: 0 auto;
         color: #fff;
         padding-bottom: 300px;
+        max-width: 100%;
+
+        @include media(0px, 1200px){
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 136px;
+        }
     }
 
     h2 {
@@ -42,6 +52,9 @@
     &-items {
         display: flex;
         justify-content: space-between;
+        @include media(0px, 1200px){
+            display: block;
+        }
     }
 
     &-item {
@@ -51,6 +64,17 @@
         height: 330px;
         align-items: center;
         justify-content: center;
+
+        @include media(0px, 1200px){
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 150px;
+        }
+
+        @include media(0px, 640px){
+            width: 235px;
+            height: 235px;
+        }
 
         h3 {
             font-size: 24px;
@@ -80,36 +104,62 @@
                 font-size: 14px;
                 font-weight: 300;
                 white-space: nowrap;
+                @include media(0px, 640px){
+                    white-space: normal;
+                }
             }
 
             &--bounty {
                 top: -75px;
                 left: 149px;
                 text-align: left;
+                @include media(0px, 640px){
+                    top: -70px;
+                    left: 110px;
+                }
             }
 
             &--consult {
                 top: -55px;
                 left: 5px;
                 text-align: right;
+                @include media(0px, 640px){
+                    top: -87px;
+                    left: -6px;
+                }
             }
 
             &--fund {
                 top: 61px;
                 left: -148px;
                 text-align: right;
+                @include media(0px, 640px){
+                    top: -33px;
+                    left: -69px;
+                    width: 100px;
+                }
             }
 
             &--command {
                 top: 203px;
                 left: -158px;
                 text-align: right;
+                top: 161px;
+                @include media(0px, 640px){
+                    left: -83px;
+                    text-align: right;
+                    width: 100px;
+                }
             }
 
             &--selling {
                 top: 258px;
                 left: 334px;
                 text-align: left;
+                @include media(0px, 640px){
+                    top: 221px;
+                    left: 178px;
+                }
             }
 
             &--legal {
@@ -122,24 +172,45 @@
                 top: 127px;
                 left: -108px;
                 text-align: right;
+                @include media(0px, 640px){
+                    top: 192px;
+                    left: -52px;
+                }
             }
 
             &--admin {
                 top: 352px;
                 left: -112px;
                 text-align: right;
+                @include media(0px, 640px){
+                    top: 240px;
+                    left: -61px;
+                    text-align: right;
+                    width: 161px;
+                }
+
+
             }
 
             &--pr {
                 top: 352px;
                 left: 222px;
                 text-align: left;
+                top: 241px;
+                @include media(0px, 640px){
+                    left: 150px;
+                    text-align: left;
+                }
             }
 
             &--marketing {
                 top: 216px;
                 left: 360px;
                 text-align: left;
+                @include media(0px, 640px){
+                    top: -23px;
+                    left: 211px;
+                }
             }
         }
     }
