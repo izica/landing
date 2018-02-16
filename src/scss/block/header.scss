@@ -6,11 +6,14 @@
 
     &__wrap {
         display: flex;
-        width: 1200px;
+        width: 1240px;
         height: 60px;
         margin: 0 auto;
         align-items: center;
         justify-content: space-between;
+        max-width: 100%;
+        padding: 0 20px;
+        
     }
 
     &__logo {

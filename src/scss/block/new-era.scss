@@ -1,21 +1,21 @@
 .new-era {
     position: relative;
-    padding-top: 50px;
+    padding-top: 60px;
     color: #fff;
     background-image: url('/assets/i/new-era-bg.png');
     background-position: center;
     background-size: cover;
-    // &::before {
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     display: block;
-    //     content: '';
-    //     opacity: 0.5;
-    //     background: #083862;
-    // }
+
+    @include media(640px, 980px){
+        padding-top: 35px;
+    }
+
+    @include media(0px, 640px){
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     &::after {
         position: absolute;
         right: 0;
@@ -37,6 +37,7 @@
         position: relative;
         z-index: 2;
         text-align: center;
+        margin-top: 0;
 
         span {
             text-transform: uppercase;
@@ -47,6 +48,7 @@
     h2 {
         font-family: 'Montserrat';
         font-size: 24px;
+        line-height: 30px;
         font-weight: 400;
         position: relative;
         z-index: 2;
@@ -61,6 +63,9 @@
         height: 90px;
         margin: 40px auto;
         cursor: pointer;
+        @include media(0px, 640px){
+            margin: 25px auto;
+        }
     }
 
     &-buttons {
@@ -70,6 +75,10 @@
         width: 442px;
         margin: 35px auto 64px;
         justify-content: space-between;
+        max-width: 100%;
+        @include media(0px, 640px){
+            margin-top: 20px;
+        }
     }
 
     &-button {
@@ -90,6 +99,9 @@
         &--outline {
             border: 2px solid #ccc;
             background: transparent;
+        }
+        &:first-child{
+            margin-right: 20px;
         }
     }
 
@@ -112,6 +124,12 @@
         background: -webkit-linear-gradient(left, rgba(64, 172, 255, 1) 0%, rgba(46, 150, 224, 1) 51%, rgba(27, 128, 191, 1) 100%);
         background: -o-linear-gradient(left, rgba(64, 172, 255, 1) 0%, rgba(46, 150, 224, 1) 51%, rgba(27, 128, 191, 1) 100%);
         background: linear-gradient(to right, rgba(64, 172, 255, 1) 0%, rgba(46, 150, 224, 1) 51%, rgba(27, 128, 191, 1) 100%);
+        max-width: 100%;
+        border-radius: 3px;
+        @include media(0px, 640px){
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
 
         &::before {
             position: absolute;
@@ -132,6 +150,7 @@
             position: relative;
             margin-bottom: 25px;
             text-align: center;
+            font-weight: 300;
         }
 
         &__items {
