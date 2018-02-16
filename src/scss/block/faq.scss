@@ -1,6 +1,15 @@
 .faq {
-    width: 1200px;
-    margin: 0 auto 160px;
+    position: relative;
+    padding-top: 200px;
+    background: rgba(#122334, 1);
+    background: -webkit-linear-gradient(top, rgba(#0e2940, 1) 0%, rgba(#122334, 1) 100%);
+    background: -o-linear-gradient(top, rgba(#0e2940, 1) 0%, rgba(#122334, 1) 100%);
+    background: linear-gradient(to bottom, rgba(#0e2940, 1) 0%, rgba(#122334, 1) 100%);
+
+    &-wrap{
+        width: 1200px;
+        margin: 0 auto 160px;
+    }
 
     h2 {
         font-family: 'Montserrat';

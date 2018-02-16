@@ -1,12 +1,35 @@
 .partners {
-    width: 1134px;
-    margin: 0 auto;
+    position: relative;
+    background: rgba(#102538, 1);
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -250px;
+        left: 0;
+        right: 0;
+        bottom: -285px;
+        background-image: url('/assets/i/partners-bg.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 100%;
+        z-index: 2;
+    }
+
+    &-wrap{
+        width: 1134px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
 
     h2 {
         font-family: 'Montserrat';
         font-size: 36px;
         font-weight: 400;
         line-height: 36px;
+        margin-top: 0;
         margin-bottom: 100px;
         text-align: center;
         color: #fff;

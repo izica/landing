@@ -1,0 +1,60 @@
+.blog {
+    h2 {
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 90px;
+        margin-top: 0;
+        font-family: 'Montserrat';
+        text-align: center;
+    }
+
+    &-slide {
+        color: #fff;
+        font-family: 'Exo 2';
+
+        &__overlay {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        &__date {
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        &__image {
+            width: 100%;
+            height: 350px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 15px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                content: '';
+                display: block;
+                opacity: 1;
+                transition: 0.3s;
+                background: rgba(0,0,0,0.5);
+            }
+
+            &:hover::after{
+                opacity: 0;
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+    }
+}
