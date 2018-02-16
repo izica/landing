@@ -139,8 +139,10 @@
     }
 
     &-items--consult &-item{
-        &:nth-child(n) {
-            margin-right: 80px;
+        @include media(0px, 1200px){
+            &:nth-child(n) {
+                margin-right: 80px;
+            }
         }
         @include media(0px, 640px){
             &:nth-child(n) {

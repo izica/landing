@@ -41,6 +41,10 @@
         background: linear-gradient(to right, rgba(13,42,67,1) 0%, rgba(20,34,49,1) 100%);
         flex-wrap: wrap;
         justify-content: center;
+        max-width: calc(100% - 40px);
+        @include media(0px, 640px){
+            padding: 30px 15px;
+        }
 
         &::before {
             position: absolute;

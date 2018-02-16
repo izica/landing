@@ -1,6 +1,9 @@
 .partners {
     position: relative;
     background: rgba(#102538, 1);
+    @include media(0px, 980px){
+        display: none;
+    }
 
     &::before {
         content: '';
@@ -18,10 +21,12 @@
     }
 
     &-wrap{
-        width: 1134px;
+        width: 1174px;
         margin: 0 auto;
         position: relative;
         z-index: 3;
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     h2 {

@@ -1,6 +1,10 @@
 .mass-media{
     position: relative;
 
+    @include media(0px, 980px){
+        display: none;
+    }
+
     &::before {
         content: '';
         display: block;
@@ -18,9 +22,11 @@
 
     &-wrap{
         z-index: 3;
-        width: 1200px;
+        width: 1240px;
         margin: 0 auto;
         position: relative;
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     h2 {

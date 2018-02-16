@@ -8,8 +8,16 @@
     padding-bottom: 160px;
 
     &-wrap{
-        width: 1200px;
+        width: 1240px;
         margin: 0 auto;
+        max-width: 100%;
+        padding: 0 20px;
+        @include media(640px, 980px){
+            padding: 0 100px;
+        }
+        @include media(0px, 640px){
+            padding: 0 20px;
+        }
     }
 
     h2 {
@@ -36,8 +44,15 @@
         border-radius: 3px;
         background: #0a1e2e;
 
+        @include media(0px, 980px){
+            width: 100%;
+        }
+
         &:first-child {
             margin-right: 50%;
+            @include media(0px, 980px){
+                margin-right: 0;
+            }
         }
 
         h3 {
