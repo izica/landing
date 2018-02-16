@@ -9,6 +9,12 @@
         width: 908px;
         margin: 0 auto;
         padding-bottom: 100px;
+        max-width: 100%;
+
+        @include media(0px, 1200px){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     h2 {
@@ -28,6 +34,15 @@
         display: flex;
         padding-bottom: 80px;
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin: auto;
+        @include media(980px, 1200px){
+            width: 630px;
+        }
+        @include media(0, 980px){
+            width: 100%;
+            display: block;
+        }
     }
 
     &-item {
@@ -40,9 +55,24 @@
         color: #fff;
         border-radius: 3px;
         background: #0a1e2e;
+        margin-bottom: 80px;
 
-        &:hover{
-            background: #40acff;
+        @include media(1200px){
+            &:nth-child(3n + 1){
+                margin-right: 10px;
+            }
+            &:nth-child(3n + 2){
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            &:nth-child(3n + 3){
+                margin-left: 10px;
+            }
+        }
+
+        @include media(0, 980px){
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &::before {
@@ -104,6 +134,13 @@
 
         &:hover {
             width: 430px;
+            background: #40acff;
+
+            @include media(980px, 1200px){
+                width: 390px;
+                margin-right: 0;
+                margin-left: 0;
+            }
 
             &::before {
                 opacity: 1;
