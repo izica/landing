@@ -16,6 +16,9 @@
             padding-left: 20px;
             padding-right: 20px;
         }
+        @include media(0px, 640px){
+            padding-bottom: 0;
+        }
     }
 
     h2 {
@@ -35,10 +38,6 @@
             width: 246px;
             height: 319px;
             background-image: url('/assets/i/today-block-1.png');
-            @include media(640px, 980px){
-                width: calc(100% - 480px);
-            }
-
         }
 
         &--2 {

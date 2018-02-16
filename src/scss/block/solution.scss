@@ -17,6 +17,14 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% 100%;
+        @include media(640px, 980px){
+            background-image: url('/assets/i/solution-bg-640.png');
+            top: 66px;
+        }
+        @include media(0px, 640px){
+            top: 112px;
+            background-image: url('/assets/i/solution-bg-350.png');
+        }
     }
 
     &-wrap {
@@ -26,7 +34,50 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding-bottom: 200px;
+        padding-bottom: 300px;
+        max-width: 100%;
+
+        @include media(0px, 1200px){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @include media(0px, 980px){
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        @include media(0px, 640px){
+            padding-bottom: 150px;
+        }
+    }
+
+    &-cube{
+        background-image: url('/assets/i/solution-cube.png');
+        background-repeat: no-repeat;
+        background-position: center -14px;
+        width: 320px;
+        height: 390px;
+        transform: translate(-78px, -84px);
+        @include media(640px, 980px){
+            transform: translate(0, 0);
+        }
+        @include media(0, 640px){
+            transform: translate(0,0) scale(0.65);
+        }
+
+    }
+
+    &-block{
+        &:first-child{
+            @include media(0px, 980px){
+                width: 100%;
+            }
+        }
+        &:last-child{
+            @include media(0px, 640px){
+                height: 315px;
+            }
+        }
     }
 
     h2 {
@@ -56,6 +107,7 @@
         display: block;
         width: 625px;
         line-height: 20px;
+        max-width: 100%;
     }
 
     ul {
