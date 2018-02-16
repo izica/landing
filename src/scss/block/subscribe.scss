@@ -24,10 +24,22 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% 100%;
+
+        @include media(640px, 980px){
+            background-image: url('/assets/i/request-bg-640.png');
+            bottom: -60px;
+        }
+        @include media(0px, 640px){
+            background-image: url('/assets/i/request-bg-350.png');
+            bottom: -60px;
+        }
     }
 
     &-wrap{
         position: relative;
+        @include media(0px, 640px){
+            padding: 0 20px;
+        }
     }
 
     h2 {
@@ -54,6 +66,7 @@
         height: 45px;
         display: flex;
         justify-content: space-between;
+        max-width: 100%;
 
         input {
             font-size: 14px;
@@ -69,6 +82,10 @@
             &::placeholder{
                 color: rgba(#fff, 0.5);
             }
+            @include media(0px, 640px){
+                width: 80%;
+                padding: 0 20px;
+            }
         }
 
         button {
@@ -82,6 +99,9 @@
             color: #fff;
             background: transparent;
             cursor: pointer;
+            @include media(0px, 640px){
+                padding: 0 20px;
+            }
         }
     }
 }
