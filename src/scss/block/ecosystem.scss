@@ -28,6 +28,16 @@
         padding-bottom: 150px;
         color: #fff;
         align-items: flex-start;
+        max-width: 100%;
+
+        @include media(0px, 1200px){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @include media(0px, 980px){
+            display: block;
+        }
     }
 
     h2 {
@@ -62,8 +72,12 @@
     }
 
     &-block {
+
         &--left {
             width: 60%;
+            @include media(0px, 980px){
+                width: 100%;
+            }
         }
 
         &--right {
@@ -71,6 +85,9 @@
             width: 40%;
             align-items: center;
             justify-content: center;
+            @include media(0px, 980px){
+                width: 100%;
+            }
         }
     }
 
@@ -90,6 +107,15 @@
         min-height: 170px;
         margin-bottom: 50px;
         padding-left: 200px;
+
+        @include media(0px, 980px){
+            margin-bottom: 80px;
+        }
+
+        @include media(0px, 640px){
+            padding-left: 0;
+            padding-top: 180px;
+        }
 
         &--clickcoin {
             background-image: url('/assets/i/ecosystem-clickcoin.png');
