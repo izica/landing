@@ -11,6 +11,11 @@
         margin: 0 auto;
         padding-bottom: 80px;
         color: #fff;
+        max-width: 100%;
+        @include media(0px, 980px){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     h2 {
@@ -30,6 +35,10 @@
             width: 246px;
             height: 319px;
             background-image: url('/assets/i/today-block-1.png');
+            @include media(640px, 980px){
+                width: calc(100% - 480px);
+            }
+
         }
 
         &--2 {
@@ -79,6 +88,13 @@
 
         &--left {
             width: calc(100% - 570px);
+            @include media(980px, 1200px){
+                width: calc(100% - 480px);
+            }
+
+            @include media(0px, 980px){
+                display: none;
+            }
 
             &::before {
                 position: absolute;
@@ -97,6 +113,12 @@
 
         &--right {
             width: 570px;
+            @include media(980px, 1200px){
+                width: 480px;
+            }
+            @include media(0px, 980px){
+                width: 100%;
+            }
         }
     }
 
@@ -107,6 +129,10 @@
     &-icons {
         display: flex;
         margin-bottom: 20px;
+
+        @include media(0px, 640px){
+            display: none;
+        }
 
         &__item {
             display: flex;
