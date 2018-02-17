@@ -1,31 +1,36 @@
 .partners {
     position: relative;
     background: rgba(#102538, 1);
-    @include media(0px, 980px){
-        display: none;
-    }
 
     &::before {
-        content: '';
-        display: block;
         position: absolute;
+        z-index: 2;
         top: -250px;
-        left: 0;
         right: 0;
         bottom: -285px;
+        left: 0;
+        display: block;
+        content: '';
         background-image: url('/assets/i/partners-bg.png');
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% 100%;
-        z-index: 2;
+        @include media(640px, 980px) {
+            background-size: 200% 100%;
+        }
+        @include media(0px, 640px) {
+            top: -200px;
+            bottom: -200px;
+            background-size: 300% 100%;
+        }
     }
 
-    &-wrap{
-        width: 1174px;
-        margin: 0 auto;
+    &-wrap {
         position: relative;
         z-index: 3;
+        width: 1174px;
         max-width: 100%;
+        margin: 0 auto;
         padding: 0 20px;
     }
 
@@ -38,6 +43,9 @@
         margin-bottom: 100px;
         text-align: center;
         color: #fff;
+        @include media(0px, 980px) {
+            margin-bottom: 60px;
+        }
 
         span {
             font-weight: 700;
@@ -49,11 +57,25 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
+        @include media(0px, 640px) {
+            flex-wrap: wrap;
+        }
     }
 
     &-item {
         display: flex;
         width: calc((100% - 66px * 3) / 4);
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @include media(640px, 980px) {
+            width: 23%;
+        }
+        @include media(0px, 640px) {
+            width: 44%;
+            margin-bottom: 30px;
+        }
 
         img {
             width: 100%;
