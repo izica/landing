@@ -13,12 +13,16 @@
         justify-content: space-between;
         max-width: 100%;
         padding: 0 20px;
-        
+
     }
 
     &__logo {
         width: 149px;
         height: 38px;
+        @include media(0px, 640px){
+            width: 120px;
+            height: 30px;
+        }
     }
 
     &-menu {
@@ -31,6 +35,21 @@
             &:hover {
                 border-bottom: 1px solid #fff;
             }
+        }
+        @include media(0px, 980px){
+            display: none;
+        }
+    }
+
+    &-burger {
+        display: none;
+        width: 40px;
+        height: 40px;
+        background: url('/assets/i/burger.png') no-repeat center;
+        cursor: pointer;
+        margin-left: 15%;
+        @include media(0px, 980px) {
+            display: block;
         }
     }
 
