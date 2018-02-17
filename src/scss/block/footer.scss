@@ -1,17 +1,43 @@
 .footer {
-    width: 570px;
+    width: 610px;
+    max-width: 100%;
     margin: 0 auto 75px;
     padding-top: 135px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @include media(0px, 640px) {
+        padding-top: 50px;
+    }
 
     &__section {
         display: flex;
         margin-bottom: 40px;
         align-items: center;
         justify-content: space-between;
+        @include media(0px, 640px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &__logo {
         width: 162px;
+        @include media(0px, 640px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__connect {
+        @include media(0px, 640px) {
+            display: none;
+        }
+    }
+
+    &__copyright {
+        @include media(0px, 640px) {
+            display: block;
+            margin-bottom: 30px;
+        }
     }
 
     &-menu {
@@ -38,6 +64,10 @@
             cursor: pointer;
             align-items: center;
             justify-content: center;
+            @include media(0px, 640px) {
+                margin-right: 15px;
+                margin-left: 15px;
+            }
 
             img {
                 max-width: 15px;
