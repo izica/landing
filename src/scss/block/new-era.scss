@@ -66,6 +66,9 @@
         @include media(0px, 640px){
             margin: 25px auto;
         }
+        &--withButtons{
+            margin: 0 20px 0 0;
+        }
     }
 
     &-buttons {
@@ -75,6 +78,7 @@
         width: 442px;
         margin: 35px auto 64px;
         justify-content: space-between;
+        align-items: center;
         max-width: 100%;
         @include media(0px, 640px){
             margin-top: 20px;
