@@ -55,6 +55,15 @@
         text-align: center;
     }
 
+    h3{
+        font-size: 24px;
+        color: #fff;
+        font-family: 'Montserrat';
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
     &-play {
         position: relative;
         z-index: 2;
@@ -134,7 +143,9 @@
             padding: 10px 0;
             margin-bottom: 20px;
         }
-
+        &--done{
+            padding: 35px 0;
+        }
         &::before {
             position: absolute;
             top: 0;
@@ -146,6 +157,16 @@
             background-image: url('/assets/i/new-era-polygon.png');
             background-repeat: no-repeat;
             background-position: left bottom;
+        }
+
+        &__desc{
+            font-weight: 700;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            margin-top: -10px;
         }
 
         &__title {
