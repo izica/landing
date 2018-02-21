@@ -66,6 +66,10 @@
         padding-bottom: 120px;
         align-items: flex-start;
 
+        &:hover img{
+            opacity: 1;
+        }
+
         @include media(0px, 980px){
             width: 100%;
             padding-bottom: 80px;
@@ -73,6 +77,8 @@
 
         img {
             margin-right: 20px;
+            opacity: 0.6;
+            transition: 0.3s;
         }
 
         &__desc {
