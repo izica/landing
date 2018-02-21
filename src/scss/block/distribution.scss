@@ -200,8 +200,8 @@
                 top: 352px;
                 left: 222px;
                 text-align: left;
-                top: 241px;
                 @include media(0px, 640px){
+                    top: 241px;
                     left: 150px;
                     text-align: left;
                 }

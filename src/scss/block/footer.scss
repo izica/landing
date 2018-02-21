@@ -56,22 +56,28 @@
     &-social {
         display: flex;
 
-        a {
-            display: flex;
+        &__item {
+            display: block;
             width: 15px;
             height: 15px;
             margin-left: 30px;
             cursor: pointer;
-            align-items: center;
-            justify-content: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            $icons: 'telegram', 'twitter', 'facebook', 'discord', 'funnyface', 'linkedin', 'bitcoin', 'socialm';
             @include media(0px, 640px) {
                 margin-right: 15px;
                 margin-left: 15px;
             }
+            @each $icon in $icons {
+                &--#{$icon} {
+                    background-image: url('/assets/i/icon/#{$icon}.png');
 
-            img {
-                max-width: 15px;
-                max-height: 15px;
+                    &:hover {
+                        background-image: url('/assets/i/icon/#{$icon}-hover.png');
+                    }
+                }
             }
         }
     }

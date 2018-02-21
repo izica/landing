@@ -3,10 +3,10 @@
     position: relative;
     width: 100%;
     background: #083862;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    // position: ;
+    // top: 0;
+    // left: 0;
+    // right: 0;
     z-index: 50;
 
     &__wrap {
@@ -138,6 +138,13 @@
             font-weight: 300;
             margin-bottom: 60px;
             color: #ffffff;
+            display: flex;
+            cursor: pointer;
+            text-decoration: none;
+            &--dashed{
+                padding-bottom: 6px;
+                border-bottom: 1px dashed #fff;
+            }
         }
         &__social {
             margin-bottom: 20px;

@@ -11,15 +11,16 @@
         <script defer src="/assets/js/bundle.min.js"></script>
     </head>
     <body>
+        <div class="arrow-scrolltop"></div>
         <header class="header">
             <div class="header__wrap">
                 <img class="header__logo" src="assets/i/logo.png" alt="">
                 <div class="header-menu">
-                    <a href="#" class="header-menu__item header-menu__item--dashed">Подписаться</a>
-                    <a href="#" class="header-menu__item">Whitelist</a>
+                    <a href="#subscribe" class="header-menu__item header-menu__item--dashed">Подписаться</a>
+                    <a href="#whitelist" class="header-menu__item">Whitelist</a>
                     <a href="#" class="header-menu__item">White paper</a>
-                    <a href="#" class="header-menu__item">Блог</a>
-                    <a href="#" class="header-menu__item">FAQ</a>
+                    <a href="#blog" class="header-menu__item">Блог</a>
+                    <a href="#faq" class="header-menu__item">FAQ</a>
                     <a href="#" class="header-menu__item">Вход</a>
                     <a href="#" class="header-menu__item header-select header-select--active">
                         <span>Язык</span>
@@ -46,11 +47,12 @@
                 <div class="header-burger"></div>
                 <div class="header-menu-mobile header-menu-mobile--active">
                     <div class="header-menu-mobile__close"></div>
-                    <div class="header-menu-mobile__item">Whitelist</div>
-                    <div class="header-menu-mobile__item">White paper</div>
-                    <div class="header-menu-mobile__item">Блог</div>
-                    <div class="header-menu-mobile__item">FAQ</div>
-                    <div class="header-menu-mobile__item">Вход</div>
+                    <a href="#subscribe" class="header-menu-mobile__item header-menu-mobile__item--dashed">Подписаться</a>
+                    <a href="#" class="header-menu-mobile__item">Whitelist</a>
+                    <a href="#" class="header-menu-mobile__item">White paper</a>
+                    <a href="#blog" class="header-menu-mobile__item">Блог</a>
+                    <a href="#faq" class="header-menu-mobile__item">FAQ</a>
+                    <a href="#" class="header-menu-mobile__item">Вход</a>
                     <div class="header-menu-mobile__item header-select">
                         <span>Язык</span>
                         <div class="header-select__icon"></div>
@@ -99,9 +101,11 @@
                 <a href="#" class="new-era-button">Whitelist</a>
                 <a href="#" class="new-era-button new-era-button--outline">White Paper</a>
             </div>
-            <img src="/assets/i/icon/new-era-scrolldown.png" alt="" class="new-era-scrolldown">
+            <a href="#today">
+                <img src="/assets/i/icon/new-era-scrolldown.png" alt="" class="new-era-scrolldown">
+            </a>
         </section>
-        <div class="today">
+        <div class="today" id="today">
             <div class="today-wrap">
                 <div class="today-block today-block--left">
                     <div data-parallax-y="2" class="parallax today-parallax today-parallax--1"></div>
@@ -157,18 +161,18 @@
                         <li><i class="fa fa-angle-right"></i> торговать внутриигровыми предметами на real-time аукционах,</li>
                         <li><i class="fa fa-angle-right"></i> покупать киберспортивные аксессуары с помощью QR-кода.</li>
                     </ul>
-                    <p>Все операции на платформе будут осуществляться с помощью внутренней валюты Clickcoin.</p>
+                    <p>Все операции на платформе будут осуществляться с помощью внутренней валюты <a href="#ecosystem">Clickcoin.</a></p>
                 </div>
                 <div class="solution-block">
                     <div class="solution-cube"></div>
                 </div>
             </div>
         </section>
-        <section class="ecosystem">
+        <section class="ecosystem" id="ecosystem">
             <div class="ecosystem-wrap">
                 <div class="ecosystem-block--left">
                     <h2>Экосистема <span>Cybercube</span></h2>
-                    <h3>Cybercube — универсальная платформа, состоящая из шести разделов, внутренней валюты Clickcoin и внешней валюты токена CYBE.</h3>
+                    <h3>Cybercube — универсальная платформа, состоящая из <a href="#capabilities">шести разделов</a>, внутренней валюты Clickcoin и внешней валюты токена CYBE.</h3>
                     <div class="ecosystem-items">
                         <div class="ecosystem-item ecosystem-item--clickcoin">
                             <div class="ecosystem-item__title">Clickcoin</div>
@@ -192,7 +196,7 @@
                 </div>
             </div>
         </section>
-        <section class="capabilities">
+        <section class="capabilities" id="capabilities">
             <div class="capabilities-wrap">
                 <h2>Возможности <span>Cybercube</span></h2>
                 <div class="capabilities-items">
@@ -336,10 +340,7 @@
             <div class="request-wrap">
                 <h2>Оставьте заявку на покупку токенов</h2>
                 <h3>и мы свяжемся с вами, чтобы предложить специальные условия</h3>
-                <form action="#" class="request-form">
-                    <input type="email" name="" value="" placeholder="Введите свою почту">
-                    <button type="submit" name="button">подписаться</button>
-                </form>
+                <div class="request-button">Whitelist</div>
             </div>
         </section>
         <section class="roadmap">
@@ -529,6 +530,7 @@
                 <div class="team-items">
                     <div class="team-item">
                         <div class="team-item__preview" style="background-image: url('http://via.placeholder.com/230x230')">
+                            <a href="#" class="team-item__social" style="background-image: url('/assets/i/icon/telegram.png')"></a>
                             <h3>Cyber boy</h3>
                         </div>
                         <h4>CEO</h4>
@@ -606,7 +608,7 @@
                 </div>
             </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="faq-wrap">
                 <h2>FAQ</h2>
                 <div class="faq-items">
@@ -641,44 +643,44 @@
                         </span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Что такое Сlickсoin?</h3>
                         <span>Clickсoin  — это внутренняя валюта Cybercube, которую можно будет обменять на фиатные деньги, криптовалюты и токены CYBE. С помощью Clickсoin будут проходить все валютные операции на платформе.</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Что такое токен CYBE?</h3>
                         <span>Это децентрализованный ERC20 токен на основе Ethereum-блокчейн.</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Сколько стоит токен CYBE?</h3>
                         <span>Стоимость одного токена CYBE равняется 40 центам.</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Как можно приобрести токены?</h3>
                         <span>Токены CYBE можно будет купить во время ICO-кампании (даты). В дальнейшем — на биржах</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Сколько всего токенов будет выпущено?</h3>
                         <span>В ходе ICO будет единоразово выпущено 125 млн токенов CYBE. Невыкупленные токены будут направлены в резервный фонд до выхода на торговую биржу, после чего будут сожжены в три этапа равными частями.
                             Приобретенные токены CYBE будут начислены покупателям после окончания основного этапа ICO (даты) согласно  условиям токен-Sale.
                         </span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Планируется ли дополнительный выпуск токенов CYBE?</h3>
                         <span>Нет. Выпуск токенов будет произведен только один раз.</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Когда стартует ICO?</h3>
                         <span>Проведение ICO планируется в (даты).</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Какова заявленная сумма ICO?</h3>
                         <span>
                             Минимальная сумма (soft cap) — $ (число)<br>
@@ -686,17 +688,17 @@
                         </span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item faq-item--opened">
                         <h3>Что будет, если вы не соберете заявленную сумму?</h3>
                         <span>Если после завершения ICO мы не соберем минимальную заявленную сумму, то вернем все полученные средства обратно на кошельки инвесторов с вычетом комиссии за транзакцию</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Какие валюты принимаются во время ICO?</h3>
                         <span>Во время ICO оплата токенов CYBE принимается в криптовалютах Ethereum и Bitcoin.</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Какова заявленная сумма ICO?</h3>
                         <span>
                             Минимальная сумма (soft cap) — $ (число)<br>
@@ -704,7 +706,7 @@
                         </span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Могу ли инвестировать в проект граждане США, Китая или Южной Кореи?</h3>
                         <span>
                             Минимальная сумма (soft cap) — $ (число)<br>
@@ -712,22 +714,22 @@
                         </span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Каким образом вы будете обеспечивать безопасность сделок на платформе?</h3>
                         <span>Безопасность сделок будет обеспечена современной технологией смарт-контрактов. Смарт-контракт — это алгоритм, созданный на основе блокчейна, для проведения и заключения самоисполнимых контрактов. Алгоритм позволяет совершать надежные и конфиденциальные транзакции, убирая из цепочки посредников. Такие сделки прозрачны, открыты и навсегда записываются в системе блокчейн.</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Каким образом вы будете привлекать игроков на свою платформу?</h3>
                         <span>Помимо основной маркетинговой кампании, после запуска платформы Cybercube станет официальным организатором отборочных игр и мировых чемпионатов. Мы проведем на платформе отборочные игры между топовыми мировыми командами из Китая, Европы, СНГ, Азии, Северной/Южной Америки для участия в офлайн-чемпионате по одной из трех киберспортивных дисциплин (Dota 2, CS:GO или LоL). Данный чемпионат станет мощнейшей рекламой для платформы Cybercube, что поможет привлечь новых пользователей и рекламодателей, охватив все мировые рынки. </span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>Где я могу найти дополнительную информацию о проекте?</h3>
                         <span>Полная информация о продукте доступна в White Paper.</span>
                         <i class="fa fa-angle-right"></i>
                     </div>
-                    <div class="faq-item faq-item faq-item--opened">
+                    <div class="faq-item">
                         <h3>У вас будет баунти-кампания?</h3>
                         <span>Во время ICO будет работать реферальная программа для каждого, кто желает принять участие и поддержать проект. Каждый участник получит 1% от привлеченных по реферальной ссылке инвестиций.</span>
                         <i class="fa fa-angle-right"></i>
@@ -735,7 +737,7 @@
                 </div>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="blog-wrap">
                 <h2>Блог</h2>
                 <div class="swiper-container blog-slider">
@@ -778,11 +780,12 @@
         </section>
         <section class="feedback">
             <div class="feedback-wrap">
-                <h2>Напишите нам</h2>
+                <h2>Возникли вопросы?</h2>
+                <h3>Напишите нам</h3>
                 <form class="" action="index.html" method="post">
                     <input type="text" placeholder="Имя" value="">
                     <input type="text" placeholder="Почта" value="">
-                    <textarea name="name" placeholder="Сообщение"></textarea>
+                    <input type="text" placeholder="Сообщение" value="" class="feedback-message">
                     <button type="submit" name="button">Отправить</button>
                 </form>
             </div>
@@ -793,8 +796,8 @@
                 <div class="footer-menu">
                     <a href="#" class="footer-menu__item">Whitelist</a>
                     <a href="#" class="footer-menu__item">White Paper</a>
-                    <a href="#" class="footer-menu__item">Блог</a>
-                    <a href="#" class="footer-menu__item">FAQ</a>
+                    <a href="#blog" class="footer-menu__item">Блог</a>
+                    <a href="#faq" class="footer-menu__item">FAQ</a>
                     <a href="#" class="footer-menu__item">Вход</a>
                     <a href="#" class="footer-menu__item">Язык</a>
                 </div>
@@ -802,18 +805,14 @@
             <div class="footer__section">
                 <span class="footer__connect">Будьте с нами на связи:</span>
                 <div class="footer-social">
-                    <a href="#">
-                        <img src="assets/i/icon/telegram.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/i/icon/twitter.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/i/icon/facebook.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="assets/i/icon/linkedin.png" alt="">
-                    </a>
+                    <a href="#" class="footer-social__item footer-social__item--telegram"></a>
+                    <a href="#" class="footer-social__item footer-social__item--twitter"></a>
+                    <a href="#" class="footer-social__item footer-social__item--facebook"></a>
+                    <a href="#" class="footer-social__item footer-social__item--linkedin"></a>
+                    <a href="#" class="footer-social__item footer-social__item--discord"></a>
+                    <a href="#" class="footer-social__item footer-social__item--funnyface"></a>
+                    <a href="#" class="footer-social__item footer-social__item--bitcoin"></a>
+                    <a href="#" class="footer-social__item footer-social__item--socialm"></a>
                 </div>
             </div>
             <div class="footer__section">

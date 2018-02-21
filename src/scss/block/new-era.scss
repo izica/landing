@@ -112,10 +112,19 @@
         border: 2px solid #40acff;
         border-radius: 100px;
         background: #40acff;
+        transition: 0.3s;
+
+        &:hover{
+            box-shadow: -1px 10px 38px -1px #161c27;
+        }
 
         &--outline {
             border: 2px solid #ccc;
             background: transparent;
+            &:hover{
+                color: #0d2530;
+                background: #fff;
+            }
         }
         &:first-child{
             margin-right: 20px;

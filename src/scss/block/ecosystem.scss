@@ -101,6 +101,13 @@
         background-image: url('/assets/i/ecosystem-scheme.png');
     }
 
+    a{
+        color: #40ACFF;
+        border-bottom: 1px dashed #40ACFF;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
     &-item {
         font-family: 'Exo 2';
         font-size: 14px;
