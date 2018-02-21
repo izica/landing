@@ -188,6 +188,10 @@
     &-social {
         display: flex;
 
+        @include media(0px, 640px) {
+            display: none;
+        }
+
         &__item {
             display: block;
             width: 13px;
