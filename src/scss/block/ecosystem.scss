@@ -29,13 +29,11 @@
         color: #fff;
         align-items: flex-start;
         max-width: 100%;
-
-        @include media(0px, 1200px){
+        @include media(0px, 1200px) {
             padding-left: 20px;
             padding-right: 20px;
         }
-
-        @include media(0px, 980px){
+        @include media(0px, 980px) {
             display: block;
         }
     }
@@ -72,10 +70,9 @@
     }
 
     &-block {
-
         &--left {
             width: 60%;
-            @include media(0px, 980px){
+            @include media(0px, 980px) {
                 width: 100%;
             }
         }
@@ -85,7 +82,7 @@
             width: 40%;
             align-items: center;
             justify-content: center;
-            @include media(0px, 980px){
+            @include media(0px, 980px) {
                 width: 100%;
             }
         }
@@ -98,10 +95,39 @@
     &-scheme {
         width: 255px;
         height: 687px;
+        position: relative;
         background-image: url('/assets/i/ecosystem-scheme.png');
+
+        &__light {
+            transition: 0.2s;
+            width: 1px;
+            height: 1px;
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 0 26px 7px #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-timing-function: linear!important;
+
+            &--1 {
+                animation: light1 5s infinite;
+            }
+
+            &--2 {
+                animation: light2 5s infinite;
+            }
+
+            &--3 {
+                animation: light3 3s infinite;
+            }
+
+            &--4 {
+                animation: light4 3s infinite;
+            }
+        }
     }
 
-    a{
+    a {
         color: #40ACFF;
         border-bottom: 1px dashed #40ACFF;
         text-decoration: none;
@@ -114,12 +140,10 @@
         min-height: 170px;
         margin-bottom: 50px;
         padding-left: 200px;
-
-        @include media(0px, 980px){
+        @include media(0px, 980px) {
             margin-bottom: 80px;
         }
-
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             padding-left: 0;
             padding-top: 180px;
         }
@@ -174,5 +198,132 @@
                 margin-right: 15px;
             }
         }
+    }
+}
+@keyframes light1 {
+    0% {
+        opacity: 0;
+        transform: translate(191px, 215px);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translate(191px, 215px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(191px, 86px);
+    }
+
+    84% {
+        opacity: 1;
+        transform: translate(188px, 76px);
+    }
+
+    88% {
+        opacity: 1;
+        transform: translate(184px, 70px);
+    }
+
+    92% {
+        opacity: 1;
+        transform: translate(179px, 66px);
+    }
+
+    96% {
+        opacity: 1;
+        transform: translate(171px, 64px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(171px, 64px);
+    }
+}
+
+@keyframes light2 {
+    0% {
+        opacity: 0;
+        transform: translate(85px, 67px);
+    }
+
+    4% {
+        opacity: 1;
+        transform: translate(85px, 67px);
+    }
+
+    8% {
+        opacity: 1;
+        transform: translate(76px, 69px);
+    }
+
+    12% {
+        opacity: 1;
+        transform: translate(69px, 71px);
+    }
+
+    16% {
+        opacity: 1;
+        transform: translate(65px, 76px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate(62px, 86px);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translate(62px, 214px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(62px, 214px);
+    }
+}
+
+@keyframes light3 {
+    0% {
+        opacity: 0;
+        transform: translate(62px, 372px);
+    }
+
+    4% {
+        opacity: 1;
+        transform: translate(62px, 372px);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translate(62px, 453px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(62px, 453px)
+    }
+}
+
+@keyframes light4 {
+    0% {
+        opacity: 0;
+        transform: translate(193px, 453px);
+    }
+
+    4% {
+        opacity: 1;
+        transform: translate(193px, 453px);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translate(193px, 372px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(193px, 372px)
     }
 }
