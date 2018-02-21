@@ -5,15 +5,14 @@
     background: -o-linear-gradient(top, rgba(#0f263b, 1) 0%, rgba(#14202e, 1) 100%);
     background: linear-gradient(to bottom, rgba(#0f263b, 1) 0%, rgba(#14202e, 1) 100%);
 
-    &-wrap{
+    &-wrap {
         width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         padding-bottom: 60px;
-        max-width: 100%;
-
-        @include media(0px, 1200px){
-            padding-left: 20px;
+        @include media(0px, 1200px) {
             padding-right: 20px;
+            padding-left: 20px;
         }
     }
 
@@ -24,6 +23,7 @@
         margin: 0 0 60px;
         text-align: center;
         color: #fff;
+
         span {
             font-weight: 700;
         }
@@ -34,7 +34,7 @@
         margin-bottom: 100px;
         align-items: flex-start;
         justify-content: space-between;
-        @include media(0px, 1200px){
+        @include media(0px, 1200px) {
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -52,11 +52,10 @@
         background: #0a1e2e;
         align-items: flex-start;
         justify-content: space-between;
-
-        @include media(0px, 1200px){
+        @include media(0px, 1200px) {
             margin-right: 20px;
-            margin-left: 20px;
             margin-bottom: 20px;
+            margin-left: 20px;
         }
 
         &--disabled {
@@ -86,9 +85,10 @@
     }
 
     &-info {
-        z-index: 2;
         position: relative;
+        z-index: 2;
         width: 733px;
+        max-width: 100%;
         margin: 0 auto 100px;
         padding: 40px 70px;
         background: rgba(13,45,79,1);
@@ -96,12 +96,10 @@
         background: -o-linear-gradient(left, rgba(13,45,79,1) 0%, rgba(9,40,66,1) 100%);
         background: linear-gradient(to right, rgba(13,45,79,1) 0%, rgba(9,40,66,1) 100%);
         box-shadow: 0 0 18px 2px rgba(0, 0, 0, .25);
-        max-width: 100%;
-        @include media(640px, 980px){
+        @include media(640px, 980px) {
             padding: 30px 20px;
         }
-
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             padding: 30px 10px;
         }
 
@@ -123,7 +121,7 @@
             position: relative;
             display: flex;
             margin: 0 0 31px;
-            align-items: center;
+            align-items: flex-start;
 
             &:last-child {
                 margin-bottom: 0;
@@ -133,9 +131,13 @@
                 font-size: 14px;
                 font-weight: 300;
                 display: block;
-                width: 70%;
+                width: 60%;
                 margin: 0;
                 color: #fff;
+                @include media(0px, 640px) {
+                    min-width: 55%;
+                    max-width: 55%;
+                }
             }
 
             span {
@@ -143,6 +145,13 @@
                 font-weight: 500;
                 display: block;
                 color: #40acf4;
+                @include media(1200px) {
+                    white-space: nowrap;
+                }
+                @include media(0px, 640px) {
+                    min-width: 45%;
+                    max-width: 45%;
+                }
             }
         }
     }

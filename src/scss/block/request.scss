@@ -1,43 +1,41 @@
 .request {
-    z-index: 2;
+    font-family: 'Montserrat';
     position: relative;
+    z-index: 2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #fff;
     background: rgba(#0f263a, 1);
     background: -webkit-linear-gradient(top, rgba(#0e2841, 1) 0%, rgba(#0f263a, 1) 100%);
     background: -o-linear-gradient(top, rgba(#0e2841, 1) 0%, rgba(#0f263a, 1) 100%);
     background: linear-gradient(to bottom, rgba(#0e2841, 1) 0%, rgba(#0f263a, 1) 100%);
-    color: #fff;
-    font-family: 'Montserrat';
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
 
     &::before {
-        content: '';
-        display: block;
         position: absolute;
-        top: 0px;
+        top: 0;
+        right: 0;
         bottom: -130px;
         left: 0;
-        right: 0;
+        display: block;
+        content: '';
         background-image: url('/assets/i/request-bg.png');
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% 100%;
-
-        @include media(640px, 980px){
+        @include media(640px, 980px) {
+            bottom: -60px;
             background-image: url('/assets/i/request-bg-640.png');
-            bottom: -60px;
         }
-        @include media(0px, 640px){
-            background-image: url('/assets/i/request-bg-350.png');
+        @include media(0px, 640px) {
             bottom: -60px;
+            background-image: url('/assets/i/request-bg-350.png');
         }
     }
 
-    &-wrap{
+    &-wrap {
         position: relative;
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             padding: 0 20px;
         }
     }
@@ -53,71 +51,73 @@
 
     h3 {
         font-size: 24px;
-        margin: 0 0 45px;
         font-weight: 300;
+        margin: 0 0 45px;
     }
 
     &-form {
-        margin: 0 auto;
-        width: 546px;
-        border-radius: 100px;
-        border: 2px solid #ccc;
-        height: 45px;
         display: flex;
-        justify-content: space-between;
+        width: 546px;
         max-width: 100%;
+        height: 45px;
+        margin: 0 auto;
+        border: 2px solid #ccc;
+        border-radius: 100px;
+        justify-content: space-between;
 
         input {
-            font-size: 14px;
             font-family: 'Exo 2';
-            border: none;
-            background: transparent;
-            height: 100%;
+            font-size: 14px;
             line-height: 43px;
+            display: block;
+            width: 60%;
+            height: 100%;
             padding: 0 40px;
             color: #fff;
-            width: 60%;
-            display: block;
-            &::placeholder{
-                color: rgba(#fff, 0.5);
-            }
-            @include media(0px, 640px){
+            border: none;
+            background: transparent;
+            @include media(0px, 640px) {
                 width: 80%;
                 padding: 0 20px;
+            }
+
+            &::placeholder {
+                color: rgba(#fff, .5);
             }
         }
 
         button {
-            font-size: 16px;
-            text-transform: uppercase;
             font-family: 'Roboto';
-            border: none;
-            height: 100%;
+            font-size: 16px;
             line-height: 43px;
+            height: 100%;
             padding: 0 40px;
-            color: #fff;
-            background: transparent;
             cursor: pointer;
-            @include media(0px, 640px){
+            text-transform: uppercase;
+            color: #fff;
+            border: none;
+            background: transparent;
+            @include media(0px, 640px) {
                 padding: 0 20px;
             }
         }
     }
-    &-button{
+
+    &-button {
         font-family: 'Exo 2';
         font-size: 16px;
         line-height: 39px;
         width: 200px;
         height: 45px;
+        margin: 0 auto;
         cursor: pointer;
         text-align: center;
+        text-decoration: none;
         text-decoration: none;
         text-transform: uppercase;
         color: #fff;
         border: 2px solid #40acff;
         border-radius: 100px;
         background: #40acff;
-        margin: 0 auto;
-        text-decoration: none;
     }
 }

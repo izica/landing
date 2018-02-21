@@ -23,15 +23,15 @@
         position: relative;
         display: flex;
         width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         padding-top: 50px;
         padding-bottom: 150px;
         color: #fff;
         align-items: flex-start;
-        max-width: 100%;
         @include media(0px, 1200px) {
-            padding-left: 20px;
             padding-right: 20px;
+            padding-left: 20px;
         }
         @include media(0px, 980px) {
             display: block;
@@ -93,21 +93,21 @@
     }
 
     &-scheme {
+        position: relative;
         width: 255px;
         height: 687px;
-        position: relative;
         background-image: url('/assets/i/ecosystem-scheme.png');
 
         &__light {
-            transition: 0.2s;
-            width: 1px;
-            height: 1px;
-            background: rgba(255,255,255,0.2);
-            box-shadow: 0 0 26px 7px #fff;
             position: absolute;
             top: 0;
             left: 0;
+            width: 1px;
+            height: 1px;
+            transition: 0.2s;
             animation-timing-function: linear!important;
+            background: rgba(255,255,255,.2);
+            box-shadow: 0 0 26px 7px #fff;
 
             &--1 {
                 animation: light1 5s infinite;
@@ -128,10 +128,10 @@
     }
 
     a {
-        color: #40ACFF;
-        border-bottom: 1px dashed #40ACFF;
-        text-decoration: none;
         font-weight: 500;
+        text-decoration: none;
+        color: #40acff;
+        border-bottom: 1px dashed #40acff;
     }
 
     &-item {
@@ -144,8 +144,8 @@
             margin-bottom: 80px;
         }
         @include media(0px, 640px) {
-            padding-left: 0;
             padding-top: 180px;
+            padding-left: 0;
         }
 
         &--clickcoin {
@@ -202,128 +202,125 @@
 }
 @keyframes light1 {
     0% {
-        opacity: 0;
         transform: translate(191px, 215px);
+        opacity: 0;
     }
 
     5% {
-        opacity: 1;
         transform: translate(191px, 215px);
+        opacity: 1;
     }
 
     80% {
-        opacity: 1;
         transform: translate(191px, 86px);
+        opacity: 1;
     }
 
     84% {
-        opacity: 1;
         transform: translate(188px, 76px);
+        opacity: 1;
     }
 
     88% {
-        opacity: 1;
         transform: translate(184px, 70px);
+        opacity: 1;
     }
 
     92% {
-        opacity: 1;
         transform: translate(179px, 66px);
+        opacity: 1;
     }
 
     96% {
-        opacity: 1;
         transform: translate(171px, 64px);
+        opacity: 1;
     }
 
     100% {
-        opacity: 0;
         transform: translate(171px, 64px);
+        opacity: 0;
     }
 }
-
 @keyframes light2 {
     0% {
-        opacity: 0;
         transform: translate(85px, 67px);
+        opacity: 0;
     }
 
     4% {
-        opacity: 1;
         transform: translate(85px, 67px);
+        opacity: 1;
     }
 
     8% {
-        opacity: 1;
         transform: translate(76px, 69px);
+        opacity: 1;
     }
 
     12% {
-        opacity: 1;
         transform: translate(69px, 71px);
+        opacity: 1;
     }
 
     16% {
-        opacity: 1;
         transform: translate(65px, 76px);
+        opacity: 1;
     }
 
     20% {
-        opacity: 1;
         transform: translate(62px, 86px);
+        opacity: 1;
     }
 
     95% {
-        opacity: 1;
         transform: translate(62px, 214px);
+        opacity: 1;
     }
 
     100% {
-        opacity: 0;
         transform: translate(62px, 214px);
+        opacity: 0;
     }
 }
-
 @keyframes light3 {
     0% {
-        opacity: 0;
         transform: translate(62px, 372px);
+        opacity: 0;
     }
 
     4% {
-        opacity: 1;
         transform: translate(62px, 372px);
+        opacity: 1;
     }
 
     95% {
+        transform: translate(62px, 453px);
         opacity: 1;
-        transform: translate(62px, 453px)
     }
 
     100% {
+        transform: translate(62px, 453px);
         opacity: 0;
-        transform: translate(62px, 453px)
     }
 }
-
 @keyframes light4 {
     0% {
-        opacity: 0;
         transform: translate(193px, 453px);
+        opacity: 0;
     }
 
     4% {
-        opacity: 1;
         transform: translate(193px, 453px);
+        opacity: 1;
     }
 
     95% {
+        transform: translate(193px, 372px);
         opacity: 1;
-        transform: translate(193px, 372px)
     }
 
     100% {
+        transform: translate(193px, 372px);
         opacity: 0;
-        transform: translate(193px, 372px)
     }
 }

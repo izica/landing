@@ -6,22 +6,22 @@
     background: linear-gradient(to bottom, rgba(#112337, 1) 0%, rgba(#161c27, 1) 100%);
 
     &::before {
-        content: '';
-        display: block;
         position: absolute;
         top: -150px;
+        right: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+        display: block;
+        content: '';
         background-image: url('/assets/i/solution-bg.png');
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% 100%;
-        @include media(640px, 980px){
-            background-image: url('/assets/i/solution-bg-640.png');
+        @include media(640px, 980px) {
             top: 66px;
+            background-image: url('/assets/i/solution-bg-640.png');
         }
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             top: 112px;
             background-image: url('/assets/i/solution-bg-350.png');
         }
@@ -29,52 +29,51 @@
 
     &-wrap {
         position: relative;
-        margin: 0 auto;
-        width: 1200px;
         display: flex;
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-bottom: 300px;
         justify-content: space-between;
         align-items: flex-start;
-        padding-bottom: 300px;
-        max-width: 100%;
-
-        @include media(0px, 1200px){
-            padding-left: 20px;
+        @include media(0px, 1200px) {
             padding-right: 20px;
+            padding-left: 20px;
         }
-        @include media(0px, 980px){
+        @include media(0px, 980px) {
             flex-direction: column-reverse;
             justify-content: flex-start;
             align-items: center;
         }
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             padding-bottom: 150px;
         }
     }
 
-    &-cube{
-        background-image: url('/assets/i/solution-cube.png');
-        background-repeat: no-repeat;
-        background-position: center -14px;
+    &-cube {
         width: 320px;
         height: 390px;
         transform: translate(-78px, -84px);
-        @include media(640px, 980px){
+        background-image: url('/assets/i/solution-cube.png');
+        background-repeat: no-repeat;
+        background-position: center -14px;
+        @include media(640px, 980px) {
             transform: translate(0, 0);
         }
-        @include media(0, 640px){
-            transform: translate(0,0) scale(0.65);
+        @include media(0, 640px) {
+            transform: translate(0,0) scale(.65);
         }
-
     }
 
-    &-block{
-        &:first-child{
-            @include media(0px, 980px){
+    &-block {
+        &:first-child {
+            @include media(0px, 980px) {
                 width: 100%;
             }
         }
-        &:last-child{
-            @include media(0px, 640px){
+
+        &:last-child {
+            @include media(0px, 640px) {
                 height: 315px;
             }
         }
@@ -82,56 +81,56 @@
 
     h2 {
         font-size: 36px;
-        color: #fff;
         font-weight: 700;
         position: relative;
         margin-bottom: 20px;
         padding-bottom: 20px;
+        color: #fff;
 
         &::after {
-            content: '';
-            display: block;
             position: absolute;
             bottom: 0;
             left: 0;
+            display: block;
             width: 35px;
             height: 0;
+            content: '';
             border-bottom: 2px solid #ccc;
         }
     }
 
     p {
-        font-size: 14px;
         font-family: 'Exo 2';
-        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
         display: block;
         width: 625px;
-        line-height: 20px;
         max-width: 100%;
+        color: #fff;
     }
 
     ul {
-        list-style: none;
         margin: 25px 15px;
         padding: 0;
+        list-style: none;
     }
 
     li {
+        font-family: 'Exo 2';
         font-size: 14px;
         line-height: 22px;
         color: #fff;
-        font-family: 'Exo 2';
 
         i {
             margin-right: 15px;
         }
     }
 
-    a{
-        color: #40ACFF;
-        border-bottom: 1px dashed #40ACFF;
-        text-decoration: none;
+    a {
         font-weight: 500;
+        text-decoration: none;
+        color: #40acff;
+        border-bottom: 1px dashed #40acff;
     }
 
     img {

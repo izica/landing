@@ -1,39 +1,39 @@
 .feedback {
     position: relative;
     padding-top: 300px;
+    padding-bottom: 40px;
     background: rgba(#0f263a, 1);
     background: -webkit-linear-gradient(top, rgba(#161d28, 1) 0%, rgba(#171b24, 1) 100%);
     background: -o-linear-gradient(top, rgba(#161d28, 1) 0%, rgba(#171b24, 1) 100%);
     background: linear-gradient(to bottom, rgba(#161d28, 1) 0%, rgba(#171b24, 1) 100%);
-    padding-bottom: 40px;
 
-    &::before{
-        content: '';
-        display: block;
+    &::before {
         position: absolute;
+        right: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+        display: block;
         height: 180px;
+        content: '';
         background: #0b2032;
     }
 
     h2 {
+        font-family: 'Montserrat';
         font-size: 36px;
         font-weight: 700;
         margin: 0 0 10px;
         text-align: center;
         color: #fff;
-        font-family: 'Montserrat';
     }
 
     h3 {
+        font-family: 'Montserrat';
         font-size: 24px;
         font-weight: 300;
         margin: 0 0 40px;
         text-align: center;
         color: #fff;
-        font-family: 'Montserrat';
     }
 
     form {
@@ -41,6 +41,7 @@
         position: relative;
         display: flex;
         width: 786px;
+        max-width: calc(100% - 40px);
         margin: 0 auto;
         padding: 30px 66px;
         border-radius: 3px;
@@ -50,8 +51,7 @@
         background: linear-gradient(to right, rgba(13,42,67,1) 0%, rgba(20,34,49,1) 100%);
         flex-wrap: wrap;
         justify-content: center;
-        max-width: calc(100% - 40px);
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             padding: 30px 15px;
         }
 
@@ -90,7 +90,7 @@
         }
     }
 
-    &-message{
+    &-message {
         width: 100%!important;
     }
 
@@ -115,22 +115,22 @@
 
     button {
         font-size: 16px;
+        font-weight: 300;
         line-height: 40px;
         position: relative;
         width: 200px;
         height: 45px;
-        font-weight: 300;
         cursor: pointer;
+        transition: 0.3s;
         text-align: center;
         text-transform: uppercase;
         color: #fff;
         border: none;
-        border-radius: 100px;
         border: 2px solid #fff;
+        border-radius: 100px;
         background: transparent;
-        transition: 0.3s;
 
-        &:hover{
+        &:hover {
             color: #0d2530;
             background: #fff;
         }

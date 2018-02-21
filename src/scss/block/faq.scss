@@ -1,21 +1,21 @@
 .faq {
     position: relative;
     padding-top: 200px;
+    padding-bottom: 160px;
     background: rgba(#122334, 1);
     background: -webkit-linear-gradient(top, rgba(#0e2940, 1) 0%, rgba(#122334, 1) 100%);
     background: -o-linear-gradient(top, rgba(#0e2940, 1) 0%, rgba(#122334, 1) 100%);
     background: linear-gradient(to bottom, rgba(#0e2940, 1) 0%, rgba(#122334, 1) 100%);
-    padding-bottom: 160px;
 
-    &-wrap{
+    &-wrap {
         width: 1240px;
-        margin: 0 auto;
         max-width: 100%;
+        margin: 0 auto;
         padding: 0 20px;
-        @include media(640px, 980px){
+        @include media(640px, 980px) {
             padding: 0 100px;
         }
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             padding: 0 20px;
         }
     }
@@ -44,14 +44,13 @@
         cursor: pointer;
         border-radius: 3px;
         background: #0a1e2e;
-
-        @include media(0px, 980px){
+        @include media(0px, 980px) {
             width: 100%;
         }
 
         &:first-child {
             margin-right: 50%;
-            @include media(0px, 980px){
+            @include media(0px, 980px) {
                 margin-right: 0;
             }
         }
@@ -61,8 +60,8 @@
             font-weight: 300;
             line-height: 20px;
             margin: 0;
-            color: #fff;
             padding-right: 20px;
+            color: #fff;
         }
 
         span {

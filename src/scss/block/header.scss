@@ -90,10 +90,10 @@
         &__item {
             font-size: 14px;
             margin: 0 5px;
+            transition: 0.3s;
             text-decoration: none;
             color: #fff;
             border-bottom: 1px dashed transparent;
-            transition: 0.3s;
 
             &:hover {
                 border-bottom: 1px dashed #fff;

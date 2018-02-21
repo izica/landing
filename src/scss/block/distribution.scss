@@ -6,43 +6,42 @@
     background: linear-gradient(to bottom, rgba(#14202e, 1) 0%, rgba(#161e2a, 1) 50%);
 
     &::before {
-        content: '';
-        display: block;
         position: absolute;
         top: -334px;
-        height: 1300px;
-        left: 0;
         right: 0;
+        left: 0;
+        display: block;
+        height: 1300px;
+        content: '';
         background-image: url('/assets/i/distribution-bg.png');
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100% 150%;
-        @include media(0px, 1200px){
+        @include media(0px, 1200px) {
             height: 1800px;
         }
     }
 
-    &-wrap{
+    &-wrap {
         position: relative;
         width: 885px;
-        margin: 0 auto;
-        color: #fff;
-        padding-bottom: 300px;
         max-width: 100%;
-
-        @include media(0px, 1200px){
-            padding-left: 20px;
+        margin: 0 auto;
+        padding-bottom: 300px;
+        color: #fff;
+        @include media(0px, 1200px) {
             padding-right: 20px;
             padding-bottom: 136px;
+            padding-left: 20px;
         }
     }
 
     h2 {
         font-size: 36px;
         font-weight: 300;
+        margin-top: 0;
         margin-bottom: 150px;
         text-align: center;
-        margin-top: 0;
 
         span {
             font-weight: 700;
@@ -52,7 +51,7 @@
     &-items {
         display: flex;
         justify-content: space-between;
-        @include media(0px, 1200px){
+        @include media(0px, 1200px) {
             display: block;
         }
     }
@@ -64,23 +63,21 @@
         height: 330px;
         align-items: center;
         justify-content: center;
-
-        @include media(0px, 1200px){
-            margin-left: auto;
+        @include media(0px, 1200px) {
             margin-right: auto;
             margin-bottom: 150px;
+            margin-left: auto;
         }
-
-        @include media(0px, 640px){
+        @include media(0px, 640px) {
             width: 235px;
             height: 235px;
         }
 
         h3 {
             font-size: 24px;
-            text-align: center;
             z-index: 2;
-            @include media(0px, 640px){
+            text-align: center;
+            @include media(0px, 640px) {
                 font-size: 18px;
             }
         }
@@ -108,7 +105,7 @@
                 font-size: 14px;
                 font-weight: 300;
                 white-space: nowrap;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     white-space: normal;
                 }
             }
@@ -117,7 +114,7 @@
                 top: -75px;
                 left: 149px;
                 text-align: left;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: -70px;
                     left: 110px;
                 }
@@ -127,7 +124,7 @@
                 top: -55px;
                 left: 5px;
                 text-align: right;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: -87px;
                     left: -6px;
                 }
@@ -137,7 +134,7 @@
                 top: 61px;
                 left: -148px;
                 text-align: right;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: -33px;
                     left: -69px;
                     width: 100px;
@@ -146,13 +143,13 @@
 
             &--command {
                 top: 203px;
+                top: 161px;
                 left: -158px;
                 text-align: right;
-                top: 161px;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     left: -83px;
-                    text-align: right;
                     width: 100px;
+                    text-align: right;
                 }
             }
 
@@ -160,7 +157,7 @@
                 top: 258px;
                 left: 334px;
                 text-align: left;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: 221px;
                     left: 178px;
                 }
@@ -176,7 +173,7 @@
                 top: 127px;
                 left: -108px;
                 text-align: right;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: 192px;
                     left: -52px;
                 }
@@ -186,21 +183,19 @@
                 top: 352px;
                 left: -112px;
                 text-align: right;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: 240px;
                     left: -61px;
-                    text-align: right;
                     width: 161px;
+                    text-align: right;
                 }
-
-
             }
 
             &--pr {
                 top: 352px;
                 left: 222px;
                 text-align: left;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: 241px;
                     left: 150px;
                     text-align: left;
@@ -211,7 +206,7 @@
                 top: 216px;
                 left: 360px;
                 text-align: left;
-                @include media(0px, 640px){
+                @include media(0px, 640px) {
                     top: -23px;
                     left: 211px;
                 }
