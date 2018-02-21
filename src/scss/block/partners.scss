@@ -2,26 +2,37 @@
     position: relative;
     background: rgba(#102538, 1);
 
-    &::before {
+    &-parallax{
         position: absolute;
+        transform: rotate(8deg);
+        width: 120%;
+        left: -10%;
+        background: #0D1A27;
         z-index: 2;
-        top: -250px;
-        right: 0;
-        bottom: -285px;
-        left: 0;
-        display: block;
-        content: '';
-        background-image: url('/assets/i/partners-bg.png');
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 100% 100%;
-        @include media(640px, 980px) {
-            background-size: 200% 100%;
-        }
+        top: -109px;
+        bottom: -181px;
+        box-shadow: inset 0px 0px 100px 2px rgba(0,0,0,0.75);
+        overflow: hidden;
+
         @include media(0px, 640px) {
-            top: -200px;
-            bottom: -200px;
-            background-size: 300% 100%;
+            bottom: -100px;
+        }
+
+        &__bg {
+            height: 150%;
+            width: 100%;
+            background: url('/assets/i/partners-parallax.png') center no-repeat;
+            background-size: 1900px 650px;
+
+            @include media(640px, 980px) {
+                height: 100%;
+                background-size: 1200px 500px;
+            }
+
+            @include media(0px, 640px) {
+                height: 100%;
+                background-size: 1200px 500px;
+            }
         }
     }
 
