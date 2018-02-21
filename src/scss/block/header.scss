@@ -91,6 +91,10 @@
             text-decoration: none;
             color: #fff;
 
+            &--dashed{
+                border-bottom: 1px dashed #fff;
+            }
+
             &:hover {
                 border-bottom: 1px solid #fff;
             }
@@ -131,26 +135,31 @@
         &__item{
             font-family: 'Exo 2';
             font-size: 24px;
-            font-weight: 400;
+            font-weight: 300;
             margin-bottom: 60px;
             color: #ffffff;
         }
         &__social {
-            display: flex;
-
+            margin-bottom: 20px;
             a {
-                display: flex;
+                display: inline-block;
                 width: 20px;
                 height: 20px;
                 margin-left: 10px;
                 margin-right: 10px;
                 cursor: pointer;
-                align-items: center;
-                justify-content: center;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
 
-                img {
-                    max-width: 20px;
-                    max-height: 20px;
+                $icons: 'telegram', 'twitter', 'facebook', 'discord', 'funnyface', 'linkedin', 'bitcoin', 'socialm';
+                @each $icon in $icons {
+                    &--#{$icon} {
+                        background-image: url('/assets/i/icon/#{$icon}.png');
+                        &:hover {
+                            background-image: url('/assets/i/icon/#{$icon}-hover.png');
+                        }
+                    }
                 }
             }
         }
@@ -174,18 +183,24 @@
     &-social {
         display: flex;
 
-        a {
-            display: flex;
+        &__item {
+            display: block;
             width: 13px;
             height: 13px;
             margin-left: 15px;
             cursor: pointer;
-            align-items: center;
-            justify-content: center;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
 
-            img {
-                max-width: 13px;
-                max-height: 13px;
+            $icons: 'telegram', 'twitter', 'facebook', 'discord', 'funnyface', 'linkedin', 'bitcoin', 'socialm';
+            @each $icon in $icons {
+                &--#{$icon} {
+                    background-image: url('/assets/i/icon/#{$icon}.png');
+                    &:hover {
+                        background-image: url('/assets/i/icon/#{$icon}-hover.png');
+                    }
+                }
             }
         }
     }

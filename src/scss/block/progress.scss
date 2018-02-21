@@ -35,7 +35,7 @@
 
         &__counter {
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 300;
             color: #fff;
             @include media(0px, 640px) {
                 width: 100%;
@@ -50,7 +50,7 @@
 
         &__tokens {
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 300;
             color: #fff;
 
             span {
@@ -132,7 +132,7 @@
 
             &__value {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 300;
             }
         }
     }
@@ -175,7 +175,7 @@
 
         &__desc {
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 300;
             margin-bottom: 5px;
         }
     }
