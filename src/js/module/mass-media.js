@@ -14,6 +14,10 @@ jQuery(document).ready(function($) {
             coef_window_width = 610;
         }
 
+        if(window_width < 640){
+            coef_window_width = 660;
+        }
+
         var y = (coef_y * 40 + coef_window * 0.05 - coef_window_width) * 6;
         object.css('transform', 'translate(0px, ' + y + 'px)');
     }

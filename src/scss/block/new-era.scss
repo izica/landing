@@ -76,6 +76,12 @@
         height: 90px;
         margin: 40px auto;
         cursor: pointer;
+        background: url('/assets/i/icon/play.png') center no-repeat;
+        background-size: 90px 90px;
+        &:hover{
+            background: url('/assets/i/icon/play-hover.png') center no-repeat;
+            background-size: 90px 90px;
+        }
         @include media(0px, 640px){
             margin: 25px auto;
         }

@@ -92,6 +92,8 @@
             margin: 0 5px;
             text-decoration: none;
             color: #fff;
+            border-bottom: 1px dashed transparent;
+            transition: 0.3s;
 
             &:hover {
                 border-bottom: 1px dashed #fff;
