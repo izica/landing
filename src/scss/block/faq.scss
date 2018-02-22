@@ -55,6 +55,11 @@
             }
         }
 
+        &__answer {
+            position: relative;
+            overflow: hidden;
+        }
+
         h3 {
             font-size: 14px;
             font-weight: 300;
@@ -66,9 +71,20 @@
 
         span {
             font-size: 14px;
-            display: none;
-            margin-top: 20px;
+            display: block;
+            margin-top: -100%;
+            padding-top: 20px;
+            transition: 0.8s;
+            transition-timing-function: ease-in-out;
+            opacity: 0;
             color: #828282;
+        }
+
+        a {
+            font-weight: 500;
+            text-decoration: none;
+            color: #40acff;
+            border-bottom: 1px dashed #40acff;
         }
 
         i {
@@ -82,7 +98,8 @@
 
         &--opened {
             span {
-                display: block;
+                margin-top: 0;
+                opacity: 1;
             }
 
             i {

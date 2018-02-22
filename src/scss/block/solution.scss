@@ -51,6 +51,7 @@
     }
 
     &-cube {
+        position: relative;
         width: 320px;
         height: 390px;
         transform: translate(-78px, -84px);
@@ -62,6 +63,16 @@
         }
         @include media(0, 640px) {
             transform: translate(0,0) scale(.65);
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 540px;
+            height: 798px;
+            background-size:  540px 798px;
         }
     }
 

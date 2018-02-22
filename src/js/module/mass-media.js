@@ -15,10 +15,10 @@ jQuery(document).ready(function($) {
         }
 
         if(window_width < 640){
-            coef_window_width = 660;
+            coef_window_width = 620;
         }
 
-        var y = (coef_y * 40 + coef_window * 0.05 - coef_window_width) * 6;
+        var y = (coef_y * 40 + coef_window * 0.05 - coef_window_width) * 4;
         object.css('transform', 'translate(0px, ' + y + 'px)');
     }
     calc($('.mass-media-parallax__bg'));

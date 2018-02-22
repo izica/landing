@@ -96,11 +96,11 @@
             padding: 0 10px;
         }
 
-        &:hover &__default {
+        &--active &__default {
             display: none;
         }
 
-        &:hover &__active {
+        &--active &__active {
             display: block;
         }
 
@@ -134,7 +134,7 @@
             margin: 0 auto;
         }
 
-        &:hover {
+        &--active {
             width: 430px;
             max-width: 100%;
             background: #40acff;
@@ -151,6 +151,13 @@
             h3 {
                 height: auto;
                 margin-bottom: 10px;
+            }
+        }
+
+        &:hover{
+            background: #40acff;
+            &::before {
+                opacity: 1;
             }
         }
 

@@ -119,5 +119,9 @@
         border: 2px solid #40acff;
         border-radius: 100px;
         background: #40acff;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: -1px 4px 24px -1px #161c27;
+        }
     }
 }

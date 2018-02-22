@@ -109,12 +109,12 @@
         <div class="today" id="today">
             <div class="today-wrap">
                 <div class="today-block today-block--left">
-                    <div data-parallax-y="2" class="parallax today-parallax today-parallax--1"></div>
-                    <div data-parallax-y="3" class="parallax today-parallax today-parallax--2"></div>
-                    <div data-parallax-y="2" class="parallax today-parallax today-parallax--3"></div>
+                    <div data-parallax-y="1.2" class="parallax today-parallax today-parallax--1"></div>
+                    <div data-parallax-y="1.3" class="parallax today-parallax today-parallax--2"></div>
+                    <div data-parallax-y="0.8" class="parallax today-parallax today-parallax--3"></div>
                     <div data-parallax-y="1" class="parallax today-parallax today-parallax--4"></div>
-                    <div data-parallax-y="2" class="parallax today-parallax today-parallax--5"></div>
-                    <div data-parallax-y="1" class="parallax today-parallax today-parallax--6"></div>
+                    <div data-parallax-y="0.9" class="parallax today-parallax today-parallax--5"></div>
+                    <div data-parallax-y="1.4" class="parallax today-parallax today-parallax--6"></div>
                 </div>
                 <div class="today-block today-block--right">
                     <div class="today-item">
@@ -206,7 +206,7 @@
             <div class="capabilities-wrap">
                 <h2>Возможности <span>Cybercube</span></h2>
                 <div class="capabilities-items">
-                    <div class="capabilities-item">
+                    <div class="capabilities-item capabilities-item--active">
                         <span>cybercube</span>
                         <h3>Arena</h3>
                         <div class="capabilities-item__default">
@@ -630,16 +630,18 @@
                 <div class="faq-items">
                     <div class="faq-item faq-item--opened">
                         <h3>Что такое Cybercube?</h3>
-                        <span>
-                            Cybercube — это универсальная киберспортивная площадка, основанная на технологии блокчейн, состоящая из шести основных разделов:<br>
-                            Cybercube ARENA (соревновательная площадка, где игроки зарабатывают на своих скиллах);<br>
-                            Cybercube BETTING (ставки на все крупные события киберспорта);<br>
-                            Cybercube STREAM (просмотр и проведение прямых трансляций);<br>
-                            Cybercube MARKETPLACE (аукцион скинов);<br>
-                            Cybercube STORE (онлайн-магазин киберспортивных аксессуаров);<br>
-                            Cybercube WALLET&EXCHANGE (личный кошелек пользователя и обмен валют).<br>
-                            Все денежные операции на площадке проходят с использованием внутренней валюты Clickcoin.
-                        </span>
+                        <div class="faq-item__answer">
+                            <span>
+                                Cybercube — это универсальная киберспортивная площадка, основанная на технологии блокчейн, состоящая из шести основных разделов:<br>
+                                Cybercube ARENA (соревновательная площадка, где игроки зарабатывают на своих скиллах);<br>
+                                Cybercube BETTING (ставки на все крупные события киберспорта);<br>
+                                Cybercube STREAM (просмотр и проведение прямых трансляций);<br>
+                                Cybercube MARKETPLACE (аукцион скинов);<br>
+                                Cybercube STORE (онлайн-магазин киберспортивных аксессуаров);<br>
+                                Cybercube WALLET&EXCHANGE (личный кошелек пользователя и обмен валют).<br>
+                                Все денежные операции на площадке проходят с использованием внутренней валюты Clickcoin.
+                            </span>
+                        </div>
                         <i class="fa fa-angle-right"></i>
                     </div>
                     <div class="faq-item faq-item--opened">
@@ -808,40 +810,35 @@
             </div>
         </section>
         <footer class="footer">
-            <div class="footer__section">
-                <img class="footer__logo" src="assets/i/logo.png" alt="">
-                <div class="footer-menu">
-                    <a href="#" class="footer-menu__item">Whitelist</a>
-                    <a href="#" class="footer-menu__item">White Paper</a>
-                    <a href="#blog" class="footer-menu__item">Блог</a>
-                    <a href="#faq" class="footer-menu__item">FAQ</a>
-                    <a href="#" class="footer-menu__item">Вход</a>
-                    <a href="#" class="footer-menu__item"><span>Язык</span>
-                        <div class="header-select__items">
-                                <div class="header-select__item header-select__item--active">русский</div>
-                                <div class="header-select__item header-select__item--active">русский</div>
-                                <div class="header-select__item header-select__item--active">русский</div>
-                                <div class="header-select__item header-select__item--active">русский</div>
-                                <div class="header-select__item header-select__item--active">русский</div>
-                            </div></a>
+            <div class="footer-wrap">
+                <div class="footer__section">
+                    <img class="footer__logo" src="assets/i/logo.png" alt="">
+                    <div class="footer-menu">
+                        <a href="#" class="footer-menu__item">Whitelist</a>
+                        <a href="#" class="footer-menu__item">White Paper</a>
+                        <a href="#blog" class="footer-menu__item">Блог</a>
+                        <a href="#faq" class="footer-menu__item">FAQ</a>
+                        <a href="#" class="footer-menu__item">Вход</a>
+                        <a href="#" class="footer-menu__item"><span>Язык</span></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__section">
-                <span class="footer__connect">Будьте с нами на связи:</span>
-                <div class="footer-social">
-                    <a href="#" class="footer-social__item footer-social__item--telegram"></a>
-                    <a href="#" class="footer-social__item footer-social__item--twitter"></a>
-                    <a href="#" class="footer-social__item footer-social__item--facebook"></a>
-                    <a href="#" class="footer-social__item footer-social__item--linkedin"></a>
-                    <a href="#" class="footer-social__item footer-social__item--discord"></a>
-                    <a href="#" class="footer-social__item footer-social__item--funnyface"></a>
-                    <a href="#" class="footer-social__item footer-social__item--bitcoin"></a>
-                    <a href="#" class="footer-social__item footer-social__item--socialm"></a>
+                <div class="footer__section">
+                    <span class="footer__connect">Будьте с нами на связи:</span>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social__item footer-social__item--telegram"></a>
+                        <a href="#" class="footer-social__item footer-social__item--twitter"></a>
+                        <a href="#" class="footer-social__item footer-social__item--facebook"></a>
+                        <a href="#" class="footer-social__item footer-social__item--linkedin"></a>
+                        <a href="#" class="footer-social__item footer-social__item--discord"></a>
+                        <a href="#" class="footer-social__item footer-social__item--funnyface"></a>
+                        <a href="#" class="footer-social__item footer-social__item--bitcoin"></a>
+                        <a href="#" class="footer-social__item footer-social__item--socialm"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__section">
-                <span class="footer__copyright">Copyright © 2018, Cybercube. All rights reserved</span>
-                <span>support@cybercube.io</span>
+                <div class="footer__section">
+                    <span class="footer__copyright">Copyright © 2018, Cybercube. All rights reserved</span>
+                    <span>support@cybercube.io</span>
+                </div>
             </div>
         </footer>
     </body>

@@ -1,6 +1,9 @@
 .partners {
     position: relative;
-    background: rgba(#102538, 1);
+
+    @include media(1200px) {
+        margin-top: -50px;
+    }
 
     &-parallax {
         position: absolute;
@@ -13,6 +16,13 @@
         transform: rotate(7deg);
         background: #0d1a27;
         box-shadow: inset 0 0 100px 2px rgba(0,0,0,.75);
+
+        @include media(1200px) {
+            transform: rotate(5deg);
+            top: 220px;
+            bottom: 220px;
+        }
+
         @include media(0px, 640px) {
             top: 70px;
             bottom: 70px;
@@ -24,6 +34,10 @@
             bottom: -281px;
             overflow: hidden;
             width: 100%;
+            @include media(1200px) {
+                top: -309px;
+                bottom: -381px;
+            }
             @include media(0px, 640px) {
                 top: -150px;
                 bottom: -150px;
@@ -33,9 +47,11 @@
         &__bg {
             width: 100%;
             height: 150%;
-            transition: 0.1s;
             background: url('/assets/i/partners-parallax.png') center no-repeat;
             background-size: 1900px 650px;
+            @include media(1900px) {
+                background-size: 2900px 650px;
+            }
             @include media(640px, 980px) {
                 height: 100%;
                 background-size: 1200px 500px;
@@ -43,6 +59,7 @@
             @include media(0px, 640px) {
                 height: 100%;
                 background-size: 1200px 500px;
+                transition: 0.1s;
             }
         }
     }
