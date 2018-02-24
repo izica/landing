@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
    AOS.init({
-      offset: 100,
+      offset: 60,
       duration: 700,
     });
 });

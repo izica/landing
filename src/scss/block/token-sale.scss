@@ -23,6 +23,9 @@
         margin: 0 0 60px;
         text-align: center;
         color: #fff;
+        @include media(1200px, 1400px) {
+            margin-bottom: 30px;
+        }
 
         span {
             font-weight: 700;
@@ -34,6 +37,9 @@
         margin-bottom: 100px;
         align-items: flex-start;
         justify-content: space-between;
+        @include media(1200px, 1400px) {
+            margin-bottom: 50px;
+        }
         @include media(0px, 1200px) {
             flex-wrap: wrap;
             justify-content: center;
