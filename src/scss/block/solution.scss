@@ -65,14 +65,23 @@
             transform: translate(0,0) scale(.65);
         }
 
-        &::before{
-            content: '';
-            display: block;
+        &::before {
             position: absolute;
-            top: 50%;
+            top: 196px;
+            left: -2px;
+            display: block;
             width: 540px;
             height: 798px;
-            background-size:  540px 798px;
+            content: '';
+            background-image: url('/assets/i/cube-shade.png');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 540px 798px;
+
+            @include media(0, 640px) {
+                width: 100vw;
+                opacity: 0.6;
+            }
         }
     }
 

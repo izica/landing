@@ -67,6 +67,11 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 19px;
+        width: 500px;
+
+        @include media(0px, 640px) {
+            width: 100%;
+        }
     }
 
     &-block {
