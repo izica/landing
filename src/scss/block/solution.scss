@@ -139,9 +139,14 @@
         font-family: 'Exo 2';
         font-size: 14px;
         line-height: 22px;
+        position: relative;
+        padding-left: 20px;
         color: #fff;
 
         i {
+            position: absolute;
+            top: 4.5px;
+            left: 0;
             margin-right: 15px;
         }
     }

@@ -97,10 +97,17 @@
             transition: 0.3s;
             text-decoration: none;
             color: #fff;
-            border-bottom: 1px dashed transparent;
+            border-bottom: 1px solid transparent;
 
             &:hover {
+                border-bottom: 1px solid #fff;
+            }
+
+            &--dashed {
                 border-bottom: 1px dashed #fff;
+                &:hover{
+                    border-bottom: 1px dashed #fff;
+                }
             }
         }
     }
@@ -111,11 +118,11 @@
         top: 0;
         right: 0;
         display: none;
-        overflow-y: auto;
+        // overflow-y: auto;
         flex-direction: column;
         width: 350px;
         max-width: 100%;
-        max-height: 100vh;
+        // max-height: 100vh;
         padding: 100px 0;
         background: rgba(#083861, .9);
         align-items: center;
@@ -144,6 +151,10 @@
             cursor: pointer;
             text-decoration: none;
             color: #fff;
+
+            &--dashed {
+                border-bottom: 1px dashed #fff;
+            }
         }
 
         &__social {

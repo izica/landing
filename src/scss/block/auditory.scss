@@ -71,6 +71,11 @@
             padding-bottom: 80px;
         }
 
+        @include media(0px, 640px) {
+            display: block;
+            padding-bottom: 50px;
+        }
+
         &:hover img {
             opacity: 1;
         }
@@ -79,6 +84,10 @@
             margin-right: 20px;
             transition: 0.3s;
             opacity: 0.6;
+            @include media(0px, 640px) {
+                display: block;
+                margin: 0 auto;
+            }
         }
 
         &__desc {

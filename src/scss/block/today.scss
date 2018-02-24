@@ -140,6 +140,7 @@
             background-repeat: no-repeat;
             background-position: left center;
             align-items: center;
+            font-weight: 500;
 
             &--money {
                 padding-left: 48px;
@@ -163,7 +164,8 @@
     }
 
     p {
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 22px;
         width: 450px;
         margin: 0;
         @include media(0px, 640px) {
@@ -181,9 +183,14 @@
         font-family: 'Exo 2';
         font-size: 14px;
         line-height: 22px;
+        position: relative;
+        padding-left: 20px;
         color: #fff;
 
         i {
+            position: absolute;
+            top: 4.5px;
+            left: 0;
             margin-right: 15px;
         }
     }
