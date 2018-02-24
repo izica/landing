@@ -120,6 +120,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        position: relative;
         @include media(640px, 980px) {
             width: 23%;
         }
