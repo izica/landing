@@ -10,6 +10,13 @@
     opacity: 0;
     color: #fff;
 
+    @include media(0px, 640px) {
+        font-size: 30px;
+        top: 100%;
+        left: 0px;
+        max-width: 100%;
+    }
+
     &--visible,
     div:hover > & {
         z-index: 10;
@@ -24,6 +31,7 @@
         border-radius: 4px;
         background: #093256;
         box-shadow: -1px 4px 24px -1px #161c27;
+        max-width: 100%;
     }
 
     &__image {

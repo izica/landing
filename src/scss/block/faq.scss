@@ -84,7 +84,8 @@
             font-weight: 500;
             text-decoration: none;
             color: #40acff;
-            border-bottom: 1px dashed #40acff;
+            background: linear-gradient(to right, #40acff 75%, transparent 75%) repeat-x 0 1.15em;
+            background-size: 6px 1px;
         }
 
         i {

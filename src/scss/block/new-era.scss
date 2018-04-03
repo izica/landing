@@ -47,6 +47,10 @@
             margin-bottom: 10px;
         }
 
+        @include media(0px, 640px) {
+            font-size: 30px;
+        }
+
         span {
             text-transform: uppercase;
             color: #40acf4;

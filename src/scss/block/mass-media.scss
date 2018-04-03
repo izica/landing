@@ -108,6 +108,7 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
+        overflow:hidden;
         @include media(0px, 640px) {
             flex-wrap: wrap;
         }
@@ -127,6 +128,7 @@
         @include media(0px, 640px) {
             width: 44%;
             margin-bottom: 30px;
+            position: initial;
         }
     }
 }

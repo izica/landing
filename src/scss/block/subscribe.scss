@@ -105,7 +105,8 @@
             background: transparent;
             @include media(0px, 640px) {
                 width: 80%;
-                padding: 0 20px;
+                padding: 0 10px;
+                font-size: 12px;
             }
 
             &::placeholder {
@@ -125,7 +126,8 @@
             border: none;
             background: transparent;
             @include media(0px, 640px) {
-                padding: 0 20px;
+                padding: 0 10px;
+                font-size: 14px;
             }
         }
     }
