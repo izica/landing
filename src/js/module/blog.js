@@ -4,6 +4,10 @@ jQuery(document).ready(function($) {
         speed: 400,
         spaceBetween: 30,
         centeredSlides: true,
-        loop: true
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 });
